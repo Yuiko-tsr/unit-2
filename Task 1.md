@@ -13,4 +13,7 @@ The transistor was successfully demonstrated on December 23, 1947 at Bell Labora
 The three individuals credited with the invention of the transistor were **William Shockley**, **John Bardeen** and **Walter Brattain**.
 
 <img width="332" alt="Screen Shot 2023-10-23 at 9 04 55" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/e10b25a1-1c64-400b-96e0-6cbbdd17c891">
+
 Fig. 1 The images are of the inventors of the transistor, from the right: **William Shockley**, **John Bardeen** and **Walter Brattain**
+
+(Citations: https://www.sjsu.edu/faculty/watkins/transist.htm#:~:text=The%20transistor%20was%20successfully%20demonstrated,John%20Bardeen%20and%20Walter%20Brattain.)
