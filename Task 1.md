@@ -8,6 +8,10 @@
 * Along with the panels, which were each 8 feet high, 2 feet wide, and 2 feet deep, the machine included 70,000 resistors, 17,000 vacuum tubes, 10,000 capacitors, 1,500 relays, and 6,000 switches. 
 * The machine was completed in February 1946 at a total cost of about $400,000. Its purpose was to help the United States win World War II, but the war ended before the machine was finished. Instead, its first job was doing calculations to help with building hydrogen bombs.
 (Citations: https://www.hp.com/ca-en/shop/offer.aspx?p=computer-history-all-about-the-eniac#:~:text=How%20Did%20the%20ENIAC%20Work,the%20computations%20at%20high%20speed.)
+
+**Paper based computer**
+* It explains a method to make transistors (FET) on a sheet of standard paper, using a Zinc Oxide (ZnO) based ink (applied by a calligraphy pen) as the channel, paper as the dielectric layer, and silver coating as the gate, source and drain (screen-printed).
+
 ## Who invented the transistor?
 The transistor was successfully demonstrated on December 23, 1947 at Bell Laboratories in Murray Hill, New Jersey. 
 The three individuals credited with the invention of the transistor were **William Shockley**, **John Bardeen** and **Walter Brattain**.
