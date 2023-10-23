@@ -10,7 +10,11 @@
 (Citations: https://www.hp.com/ca-en/shop/offer.aspx?p=computer-history-all-about-the-eniac#:~:text=How%20Did%20the%20ENIAC%20Work,the%20computations%20at%20high%20speed.)
 
 **Paper based computer**
-* It explains a method to make transistors (FET) on a sheet of standard paper, using a Zinc Oxide (ZnO) based ink (applied by a calligraphy pen) as the channel, paper as the dielectric layer, and silver coating as the gate, source and drain (screen-printed).
+* The paper "Handwritten Oxide Electronics on Paper" by Elvira Fortunato et al. describes a method to make transistors on a sheet of standard paper using a Zinc Oxide (ZnO) based ink applied by a calligraphy pen as the channel, paper as the dielectric layer, and silver coating as the gate, source, and drain (screen-printed).
+* The authors constructed an inverter with 15 V as Vdd, a 3.75 MΩ resistor, Vin = 12 V, and Vout = 6 V. The simplicity of the method raises the question of whether such transistors could be used to make logic gates, an adder, and eventually a complete CPU entirely by hand or at least printed.
+* Zinc Oxide only allows n-channel, enhancement type FET, which means the logic used for building gates would be NMOS (with somewhat big mega-ohms pull-up resistors).
+* The author of the post on electronics.stackexchange.com is considering building a paper-based CPU based on that fabrication method. They could print transistors on sheets, rolled up for each component (or a bunch of them), then clipped together using copper wire with tips bent in a paperclip shape. Capacitors could be made by printing two conductive layers separated by a dielectric layer.
+(Citations: “Handwritten Oxide Electronics on Paper” (DOI: 10.1002/admt.201700009) by Elvira Fortunato et al.)
 
 ## Who invented the transistor?
 The transistor was successfully demonstrated on December 23, 1947 at Bell Laboratories in Murray Hill, New Jersey. 
