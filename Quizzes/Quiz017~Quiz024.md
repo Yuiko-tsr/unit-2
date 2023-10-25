@@ -35,3 +35,37 @@
  ## Flowchart:
 
  Fig. 4 Image of flowchart of Quiz 017
+
+# Quiz018:
+ ## Question:
+
+ Fig. 5 Image of question of Quiz 018
+ ## Answer:
+```.py
+def get_table():
+    header = ["|", "A", "|", "B", "|", "C", "|"]
+    out = ""
+
+    for item in header:
+        out += item
+    out += "\n"
+
+    for i in range(8):
+        a = (i // 4) % 2
+        b = (i // 2) % 2
+        c = i % 2
+        out += "|" + str(a) + "|" + str(b) + "|" + str(c) + "|\n"
+    return out
+
+table = get_table()
+print(table)
+```
+
+ ## Running Code:
+<img width="1106" alt="Screen Shot 2023-10-25 at 10 46 30" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/6684c2aa-6b1e-4330-9fae-80b63bc345da">
+
+ Fig. 6 Image of code running of Quiz 017
+
+ ## Flowchart:
+
+ Fig. 7 Image of flowchart of Quiz 017
