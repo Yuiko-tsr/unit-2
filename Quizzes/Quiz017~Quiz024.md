@@ -1,5 +1,6 @@
 # Quiz017:
  ## Question:
+<img width="1079" alt="Screen Shot 2023-10-28 at 15 47 18" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/0dedeeb3-e330-4402-85da-a4051ede5bb4">
 
  Fig. 1 Image of question of Quiz 017
  ## Answer:
@@ -33,6 +34,7 @@
  Fig. 3 Image of code running of Quiz 017
 
  ## Flowchart:
+<img width="583" alt="Screen Shot 2023-10-28 at 15 46 40" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/363a9ca6-9a96-4312-9da6-615dcf0f5456">
 
  Fig. 4 Image of flowchart of Quiz 017
 
@@ -67,5 +69,6 @@ print(table)
  Fig. 6 Image of code running of Quiz 017
 
  ## Flowchart:
+<img width="621" alt="Screen Shot 2023-10-28 at 15 54 00" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/83a7b401-c9d4-472f-bfba-84ee4d94c98f">
 
  Fig. 7 Image of flowchart of Quiz 017
