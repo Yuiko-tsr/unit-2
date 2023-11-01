@@ -66,9 +66,43 @@ print(table)
  ## Running Code:
 <img width="1106" alt="Screen Shot 2023-10-25 at 10 46 30" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/6684c2aa-6b1e-4330-9fae-80b63bc345da">
 
- Fig. 6 Image of code running of Quiz 017
+ Fig. 6 Image of code running of Quiz 018
 
  ## Flowchart:
 <img width="621" alt="Screen Shot 2023-10-28 at 15 54 00" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/83a7b401-c9d4-472f-bfba-84ee4d94c98f">
 
- Fig. 7 Image of flowchart of Quiz 017
+ Fig. 7 Image of flowchart of Quiz 018
+ 
+# Quiz019:
+ ## Question:
+
+ Fig. 8 Image of question of Quiz 019
+ ## Answer:
+```.py
+def get_table():
+    header = ["|", "A", "|", "B", "|", "C", "|","AB + not B + not CB", "|"]
+    out = ""
+
+    for item in header:
+        out += item
+    out += "\n"
+
+    for i in range(8):
+        a = (i // 4) % 2
+        b = (i // 2) % 2
+        c = i % 2
+        eq = int((a and b) or (not b) or (not (c and b)))
+        out += "|" + str(a) + "|" + str(b) + "|" + str(c) + "|" + str(eq) + "|\n"
+    return out
+
+table = get_table()
+print(table)
+```
+ ## Running Code:
+<img width="1132" alt="Screen Shot 2023-11-01 at 11 03 15" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/af678c3d-daca-4614-8c4f-0b2e89621819">
+
+ Fig. 9 Image of code running of Quiz 019
+
+ ## Flowchart:
+
+ Fig. 10 Image of flowchart of Quiz 019
