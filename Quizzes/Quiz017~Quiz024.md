@@ -40,6 +40,7 @@
 
 # Quiz018:
  ## Question:
+<img width="1073" alt="Screen Shot 2023-11-01 at 11 06 41" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/d0c1242a-6ee8-4ac0-a2c4-8ffff1e8872e">
 
  Fig. 5 Image of question of Quiz 018
  ## Answer:
@@ -104,5 +105,6 @@ print(table)
  Fig. 9 Image of code running of Quiz 019
 
  ## Flowchart:
+<img width="561" alt="Screen Shot 2023-11-01 at 11 06 00" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/179bbac0-8cee-4963-8372-626de99e9f8c">
 
  Fig. 10 Image of flowchart of Quiz 019
