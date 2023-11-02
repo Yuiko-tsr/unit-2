@@ -108,3 +108,31 @@ print(table)
 <img width="561" alt="Screen Shot 2023-11-01 at 11 06 00" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/179bbac0-8cee-4963-8372-626de99e9f8c">
 
  Fig. 10 Image of flowchart of Quiz 019
+
+# Quiz020:
+ ## Question:
+
+ Fig. 11 Image of question of Quiz 020
+ ## Answer:
+ ```.py
+ def produce(n=int, m=int, s=int):
+    print("|x|y(x)|")
+    import random
+    random.seed(1234)
+    for i in range(n):
+        x=random.randint(0,100)
+        y=x**(1/2*((m/s)**1/2))
+        ans = print(f"|{str(x)}|{str(y)}|\n")
+    return ans
+
+sample = produce(n =5, m=3, s=2)
+print(sample)
+```
+ ## Running Code:
+<img width="234" alt="Screen Shot 2023-11-02 at 9 03 44" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/344d7f7a-7eef-4d50-be76-bf677583b016">
+
+ Fig. 12 Image of code running of Quiz 020
+
+ ## Flowchart:
+
+ Fig. 13 Image of flowchart of Quiz 020
