@@ -1,4 +1,4 @@
-'''.py
+```.py
 import pyfirmata
 from pyfirmata import Arduino
 
@@ -35,4 +35,4 @@ while t>0:
 
 
 exit()
-'''
+```
