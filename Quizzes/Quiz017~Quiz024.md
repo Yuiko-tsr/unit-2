@@ -179,7 +179,7 @@ import matplotlib.pyplot as plt
 
 plt.style.use('ggplot')
 
-y, x = produce(n=10, m=5, s=2)
+y, x = produce(n=5, m=3, s=2)
 
 plt.plot(x,y, color = "r", marker = "o")
 plt.xlabel("x", fontsize = 20)
@@ -191,7 +191,7 @@ plt.show()
 Fig. 19 Image of answer of Quiz 021
 
  ## Running Code:
-<img width="472" alt="Screen Shot 2023-11-16 at 12 57 15" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/ab8630bc-cd09-442e-a36d-5b181525ed10">
+<img width="465" alt="Screen Shot 2023-11-16 at 20 00 10" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/3522bddf-40c3-4d50-905d-e268612065a1">
 
  Fig. 20 Image of code running of Quiz 021
 
