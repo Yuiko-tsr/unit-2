@@ -76,6 +76,7 @@ print(table)
  
 # Quiz019:
  ## Question:
+<img width="1063" alt="Screen Shot 2023-11-16 at 12 51 24" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/6da984c3-e183-40d3-8648-fc1074e9b7ac">
 
  Fig. 8 Image of question of Quiz 019
  ## Answer:
@@ -111,6 +112,7 @@ print(table)
 
 # Quiz020:
  ## Question:
+<img width="1076" alt="Screen Shot 2023-11-16 at 12 51 04" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/a0fbdc78-45bf-4ac4-9186-154d4a2a302a">
 
  Fig. 11 Image of question of Quiz 020
  ## Answer:
@@ -136,3 +138,84 @@ print(sample)
  ## Flowchart:
 
  Fig. 13 Image of flowchart of Quiz 020
+
+# Quiz021:
+ ## Question:
+<img width="1076" alt="Screen Shot 2023-11-16 at 12 55 47" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/fabaf78d-c17c-4451-9f0e-cec1ec13fc0e">
+
+ Fig. 14 Image of question of Quiz 021
+ ## Answer:
+ ```.py
+import random
+
+random.seed(1234)
+def produce (n:int, m:int, s:int):
+    x_out = []
+    y_out = []
+    for _ in range(n):
+        x = random.randint(0,100)
+        y = x ** (0.5*((m/s)**2))
+        x_out.append(x)
+        y_out.append(y)
+
+    return y_out, x_out
+
+import matplotlib.pyplot as plt
+
+plt.style.use('ggplot')
+
+y, x = produce(n=10, m=5, s=2)
+
+plt.plot(x,y, color = "r", marker = "o")
+plt.xlabel("x", fontsize = 20)
+plt.ylabel("$y=x^{(1/2)(m/s)^2}$", fontsize = 20)
+plt.show()
+```
+ ## Running Code:
+<img width="472" alt="Screen Shot 2023-11-16 at 12 57 15" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/ab8630bc-cd09-442e-a36d-5b181525ed10">
+
+ Fig. 15 Image of code running of Quiz 021
+
+ ## Flowchart:
+
+ Fig. 16 Image of flowchart of Quiz 020
+
+# Quiz022:
+ ## Question:
+<img width="1082" alt="Screen Shot 2023-11-16 at 12 56 44" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/88f61ea5-67a0-4be2-ae47-93901f97b091">
+
+ Fig. 17 Image of question of Quiz 022
+ ## Answer:
+ ```.py
+import random
+
+random.seed(1234)
+def produce ():
+    x_out = []
+    y_out = []
+    x = -10
+    for _ in range(100):
+        y = 2*((x+5)**2)
+        x_out.append(x)
+        y_out.append(y)
+        x += 0.2
+
+    return y_out, x_out
+
+import matplotlib.pyplot as plt
+
+plt.style.use('ggplot')
+y,x =produce()
+plt.plot(x,y, color = "r", marker = "o")
+plt.xlabel("x", fontsize = 20)
+plt.ylabel("$y=2(x+5)^2$", fontsize = 20)
+plt.show()
+```
+ ## Running Code:
+<img width="469" alt="Screen Shot 2023-11-16 at 12 56 29" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5616f065-4bdc-4e86-bd6e-2c1f2e1a78b8">
+
+ Fig. 18 Image of code running of Quiz 020
+
+ ## Flowchart:
+
+ Fig. 19 Image of flowchart of Quiz 020
