@@ -3,7 +3,7 @@
 <img width="1079" alt="Screen Shot 2023-10-28 at 15 47 18" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/0dedeeb3-e330-4402-85da-a4051ede5bb4">
 
  Fig. 1 Image of question of Quiz 017
- ## Answer:
+ ## Answer a:
  ```.py
  def get_l3tt3r(msg=str):
      message =" "
@@ -28,22 +28,26 @@
  <img width="435" alt="Screen Shot 2023-10-23 at 8 21 18" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/f50a1ccc-25c9-4b5b-9c79-608df24f4627">
 
  Fig. 2 Image of answer of Quiz 017
+ ## Answer b:
+ <img width="885" alt="Screen Shot 2023-11-16 at 14 43 09" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5aa555cf-de9a-4b6f-ab7d-a88ce49c3b79">
+
+Fig.3 Image of answer of Quiz 017
  ## Running Code:
  <img width="1179" alt="Screen Shot 2023-10-23 at 8 20 40" src="https://github.com/Yuiko-tsr/unit-1/assets/134657923/8208d60f-bec6-4487-b8de-7af808e9dd0b">
 
- Fig. 3 Image of code running of Quiz 017
+ Fig. 4 Image of code running of Quiz 017
 
  ## Flowchart:
 <img width="583" alt="Screen Shot 2023-10-28 at 15 46 40" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/363a9ca6-9a96-4312-9da6-615dcf0f5456">
 
- Fig. 4 Image of flowchart of Quiz 017
+ Fig. 5 Image of flowchart of Quiz 017
 
 # Quiz018:
  ## Question:
 <img width="1073" alt="Screen Shot 2023-11-01 at 11 06 41" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/d0c1242a-6ee8-4ac0-a2c4-8ffff1e8872e">
 
- Fig. 5 Image of question of Quiz 018
- ## Answer:
+ Fig. 6 Image of question of Quiz 018
+ ## Answer a:
 ```.py
 def get_table():
     header = ["|", "A", "|", "B", "|", "C", "|"]
@@ -63,23 +67,25 @@ def get_table():
 table = get_table()
 print(table)
 ```
+## Answer b:
 
+Fig. 7: Image of answer of b
  ## Running Code:
 <img width="1106" alt="Screen Shot 2023-10-25 at 10 46 30" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/6684c2aa-6b1e-4330-9fae-80b63bc345da">
 
- Fig. 6 Image of code running of Quiz 018
+ Fig. 8 Image of code running of Quiz 018
 
  ## Flowchart:
 <img width="621" alt="Screen Shot 2023-10-28 at 15 54 00" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/83a7b401-c9d4-472f-bfba-84ee4d94c98f">
 
- Fig. 7 Image of flowchart of Quiz 018
+ Fig. 9 Image of flowchart of Quiz 018
  
 # Quiz019:
  ## Question:
 <img width="1063" alt="Screen Shot 2023-11-16 at 12 51 24" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/6da984c3-e183-40d3-8648-fc1074e9b7ac">
 
- Fig. 8 Image of question of Quiz 019
- ## Answer:
+ Fig. 10 Image of question of Quiz 019
+ ## Answer a:
 ```.py
 def get_table():
     header = ["|", "A", "|", "B", "|", "C", "|","AB + not B + not CB", "|"]
@@ -100,22 +106,26 @@ def get_table():
 table = get_table()
 print(table)
 ```
+## Answer b:
+<img width="687" alt="Screen Shot 2023-11-16 at 14 45 21" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/62937226-a6f1-45a9-9eff-6559da033c74">
+
+Fig. 11 Image of answer of Quiz 019
  ## Running Code:
 <img width="1132" alt="Screen Shot 2023-11-01 at 11 03 15" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/af678c3d-daca-4614-8c4f-0b2e89621819">
 
- Fig. 9 Image of code running of Quiz 019
+ Fig. 12 Image of code running of Quiz 019
 
  ## Flowchart:
 <img width="561" alt="Screen Shot 2023-11-01 at 11 06 00" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/179bbac0-8cee-4963-8372-626de99e9f8c">
 
- Fig. 10 Image of flowchart of Quiz 019
+ Fig. 13 Image of flowchart of Quiz 019
 
 # Quiz020:
  ## Question:
 <img width="1076" alt="Screen Shot 2023-11-16 at 12 51 04" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/a0fbdc78-45bf-4ac4-9186-154d4a2a302a">
 
- Fig. 11 Image of question of Quiz 020
- ## Answer:
+ Fig. 14 Image of question of Quiz 020
+ ## Answer a:
  ```.py
  def produce(n=int, m=int, s=int):
     print("|x|y(x)|")
@@ -130,10 +140,13 @@ print(table)
 sample = produce(n =5, m=3, s=2)
 print(sample)
 ```
+## Answer b:
+
+Fig. 15 Image of answer of Quiz 020
  ## Running Code:
 <img width="234" alt="Screen Shot 2023-11-02 at 9 03 44" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/344d7f7a-7eef-4d50-be76-bf677583b016">
 
- Fig. 12 Image of code running of Quiz 020
+ Fig. 15 Image of code running of Quiz 020
 
  ## Flowchart:
 
