@@ -232,6 +232,8 @@ plt.show()
 ```
 
 ## Answer b:
+<img width="618" alt="Screen Shot 2023-11-16 at 14 58 55" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/d4720cad-8588-4f62-88e7-aec5a09ffd7b">
+
 Fig. 23 Image of answer of Quiz 022
  ## Running Code:
 <img width="469" alt="Screen Shot 2023-11-16 at 12 56 29" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5616f065-4bdc-4e86-bd6e-2c1f2e1a78b8">
@@ -267,6 +269,8 @@ plt.plot(data_x, data_y, color="red", marker= '.')
 plt.ylabel("$f(x)=|x|$")
 plt.show()
 ```
+<img width="619" alt="Screen Shot 2023-11-16 at 15 00 10" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/d690a2f7-cf03-4bb0-9d3d-418830249774">
+
  Fig. 27 Image of question of Quiz 023
 
  ## Running Code:
