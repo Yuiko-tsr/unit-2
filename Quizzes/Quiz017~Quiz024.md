@@ -186,6 +186,8 @@ plt.xlabel("x", fontsize = 20)
 plt.ylabel("$y=x^{(1/2)(m/s)^2}$", fontsize = 20)
 plt.show()
 ```
+<img width="650" alt="Screen Shot 2023-11-16 at 14 53 08" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/d1088150-d5eb-4ab8-aa07-1cb7d3949912">
+
 Fig. 19 Image of answer of Quiz 021
 
  ## Running Code:
