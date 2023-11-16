@@ -244,7 +244,7 @@ Fig. 23 Image of answer of Quiz 022
 
 # Quiz023:
  ## Question:
-<img width="1082" alt="Screen Shot 2023-11-16 at 12 56 44" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/88f61ea5-67a0-4be2-ae47-93901f97b091">
+<img width="1031" alt="Screen Shot 2023-11-16 at 14 57 45" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/30f0ca79-1f5a-4349-904a-f33f82d1ffa8">
 
  Fig. 26 Image of question of Quiz 023
  ## Answer:
