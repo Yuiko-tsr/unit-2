@@ -1,4 +1,4 @@
-# Quiz017:
+<img width="1045" alt="Screen Shot 2023-11-16 at 15 02 59" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/0206a3bf-fae4-40ae-a436-6afc77865c5f"># Quiz017:
  ## Question:
 <img width="1079" alt="Screen Shot 2023-10-28 at 15 47 18" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/0dedeeb3-e330-4402-85da-a4051ede5bb4">
 
@@ -274,10 +274,31 @@ plt.show()
  Fig. 27 Image of question of Quiz 023
 
  ## Running Code:
-<img width="469" alt="Screen Shot 2023-11-16 at 12 56 29" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5616f065-4bdc-4e86-bd6e-2c1f2e1a78b8">
+<img width="492" alt="Screen Shot 2023-11-16 at 15 02 33" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/1cb20afe-8bcd-4c72-b4a0-4c2dc9f75545">
 
  Fig. 28 Image of code running of Quiz 023
 
  ## Flowchart:
 
  Fig. 29 Image of flowchart of Quiz 023
+
+# Quiz024:
+ ## Question:
+<img width="1041" alt="Screen Shot 2023-11-16 at 15 03 08" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/b3dea8e9-2dfa-4241-b574-212d487b31fc">
+
+ Fig. 30 Image of question of Quiz 024
+ ## Answer:
+ ```.py
+
+```
+<img width="416" alt="Screen Shot 2023-11-16 at 15 03 27" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/8910fd09-5367-45d7-8a81-9d8426ae3767">
+
+ Fig. 31 Image of question of Quiz 024
+
+ ## Running Code:
+
+ Fig. 32 Image of code running of Quiz 024
+
+ ## Flowchart:
+
+ Fig. 33 Image of flowchart of Quiz 025
