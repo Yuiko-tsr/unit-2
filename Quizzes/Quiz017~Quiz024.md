@@ -141,22 +141,23 @@ sample = produce(n =5, m=3, s=2)
 print(sample)
 ```
 ## Answer b:
+<img width="539" alt="Screen Shot 2023-11-16 at 14 48 12" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/dc5bd2e1-66ab-4f98-b446-02f2b1ca23bb">
 
 Fig. 15 Image of answer of Quiz 020
  ## Running Code:
 <img width="234" alt="Screen Shot 2023-11-02 at 9 03 44" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/344d7f7a-7eef-4d50-be76-bf677583b016">
 
- Fig. 15 Image of code running of Quiz 020
+ Fig. 16 Image of code running of Quiz 020
 
  ## Flowchart:
 
- Fig. 13 Image of flowchart of Quiz 020
+ Fig. 17 Image of flowchart of Quiz 020
 
 # Quiz021:
  ## Question:
 <img width="1076" alt="Screen Shot 2023-11-16 at 12 55 47" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/fabaf78d-c17c-4451-9f0e-cec1ec13fc0e">
 
- Fig. 14 Image of question of Quiz 021
+ Fig. 18 Image of question of Quiz 021
  ## Answer:
  ```.py
 import random
@@ -184,20 +185,22 @@ plt.xlabel("x", fontsize = 20)
 plt.ylabel("$y=x^{(1/2)(m/s)^2}$", fontsize = 20)
 plt.show()
 ```
+Fig. 19 Image of answer of Quiz 021
+
  ## Running Code:
 <img width="472" alt="Screen Shot 2023-11-16 at 12 57 15" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/ab8630bc-cd09-442e-a36d-5b181525ed10">
 
- Fig. 15 Image of code running of Quiz 021
+ Fig. 20 Image of code running of Quiz 021
 
  ## Flowchart:
 
- Fig. 16 Image of flowchart of Quiz 020
+ Fig. 21 Image of flowchart of Quiz 020
 
 # Quiz022:
  ## Question:
 <img width="1082" alt="Screen Shot 2023-11-16 at 12 56 44" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/88f61ea5-67a0-4be2-ae47-93901f97b091">
 
- Fig. 17 Image of question of Quiz 022
+ Fig. 22 Image of question of Quiz 022
  ## Answer:
  ```.py
 import random
@@ -224,6 +227,9 @@ plt.xlabel("x", fontsize = 20)
 plt.ylabel("$y=2(x+5)^2$", fontsize = 20)
 plt.show()
 ```
+
+## Answer b:
+Fig. 23 Image of answer of Quiz 022
  ## Running Code:
 <img width="469" alt="Screen Shot 2023-11-16 at 12 56 29" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5616f065-4bdc-4e86-bd6e-2c1f2e1a78b8">
 
