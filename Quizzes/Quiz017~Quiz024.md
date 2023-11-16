@@ -68,6 +68,7 @@ table = get_table()
 print(table)
 ```
 ## Answer b:
+<img width="799" alt="Screen Shot 2023-11-16 at 14 50 42" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/798d2b00-d835-4654-9e4b-f6e830b93685">
 
 Fig. 7: Image of answer of b
  ## Running Code:
