@@ -7,14 +7,16 @@
  ```.py
 
  ```
+<img width="321" alt="Screen Shot 2023-11-16 at 15 05 23" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/c526c3de-18fe-4ba3-9f40-193bac822bd9">
 
+Fig. 2 Image of answer of Quiz 025
  ## Running Code:
 
- Fig. 2 Image of code running of Quiz 025
+ Fig. 3 Image of code running of Quiz 025
 
  ## Flowchart:
 
- Fig. 3 Image of flowchart of Quiz 025
+ Fig. 4 Image of flowchart of Quiz 025
 
  # Quiz026:
  ## Question:
@@ -40,6 +42,8 @@ print(data)
 plt.plot(data["x"], data["y"])
 plt.show()
  ```
+
+Fig. 6 Image of answer of Quiz026
  ## Running Code:
 <img width="432" alt="Screen Shot 2023-11-16 at 13 33 56" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/f05ef5b8-619b-4209-8232-f7f22790164e">
 
