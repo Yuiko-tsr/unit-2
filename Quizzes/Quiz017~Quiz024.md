@@ -1,4 +1,3 @@
-<img width="1045" alt="Screen Shot 2023-11-16 at 15 02 59" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/0206a3bf-fae4-40ae-a436-6afc77865c5f"># Quiz017:
  ## Question:
 <img width="1079" alt="Screen Shot 2023-10-28 at 15 47 18" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/0dedeeb3-e330-4402-85da-a4051ede5bb4">
 
@@ -284,7 +283,7 @@ plt.show()
 
 # Quiz024:
  ## Question:
-<img width="1041" alt="Screen Shot 2023-11-16 at 15 03 08" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/b3dea8e9-2dfa-4241-b574-212d487b31fc">
+<img width="1045" alt="Screen Shot 2023-11-16 at 15 02 59" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/0206a3bf-fae4-40ae-a436-6afc77865c5f"># Quiz017:
 
  Fig. 30 Image of question of Quiz 024
  ## Answer:
