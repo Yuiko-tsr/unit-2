@@ -289,15 +289,48 @@ plt.show()
  Fig. 30 Image of question of Quiz 024
  ## Answer:
  ```.py
+import matplotlib.pyplot as plt
+import numpy as np
 
+plt.style.use('ggplot')
+humid =[57.0,56.0,57.0,56.0,55.0,55.0,54.0,54.0,54.0,53.0,53.0,54.0,53.0,53.0,52.0,52.0,51.0,51.0,51.0,50.0,50.0,49.0,50.0,49.0,49.0,48.0,49.0,48.0,48.0,48.0,49.0]
+time=[]
+
+t=0
+for i in range(len(humid)):
+    time.append(t)
+    t+=5
+
+plt.scatter(time,humid,color="blue")
+plt.xlabel("Time(min)")
+plt.ylabel("Humidity (%)")
+
+m, b = np.polyfit(time, humid, 1)
+#np.polyfit(x-axis, y-axis, a) x^a
+
+print(f"Linear model H(t)={m:.2f}t+{b:.2f}")
+
+time_model =[]
+humid_model =[]
+t=0
+for i in range(len(humid)):
+    time_model.append(t)
+    humid_model.append(m*t+b)
+    t+=5
+
+plt.plot(time_model,humid_model,color="black")
+plt.text(1,4,f"H_model ={m:.2f}t+{b:.2f}",fontsize=20)
+plt.show()
 ```
 <img width="416" alt="Screen Shot 2023-11-16 at 15 03 27" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/8910fd09-5367-45d7-8a81-9d8426ae3767">
 
  Fig. 31 Image of question of Quiz 024
 
  ## Running Code:
+<img width="465" alt="Screen Shot 2023-11-16 at 19 45 38" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/adebf551-d34f-4e66-8471-a15a9980884b">
 
- Fig. 32 Image of code running of Quiz 024
+ Fig. 32 Image of code running of Quiz 024<img width="1092" alt="Screen Shot 2023-11-16 at 19 45 49" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/646e5c46-7a4d-40fb-844f-6fe3ca87910d">
+
 
  ## Flowchart:
 
