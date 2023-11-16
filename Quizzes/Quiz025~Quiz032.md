@@ -14,18 +14,12 @@ Fig. 2 Image of answer of Quiz 025
 
  Fig. 3 Image of code running of Quiz 025
 
- ## Flowchart:
-
- Fig. 4 Image of flowchart of Quiz 025
-
  # Quiz026:
  ## Question:
 
- Fig. 5 Image of question of Quiz 026
+ Fig. 4 Image of question of Quiz 026
  ## Answer:
  ```.py
-
-
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -42,14 +36,11 @@ print(data)
 plt.plot(data["x"], data["y"])
 plt.show()
  ```
+<img width="783" alt="Screen Shot 2023-11-16 at 20 03 32" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/3ccc8565-b7ac-4d78-836b-46a8f77f5c77">
 
-Fig. 6 Image of answer of Quiz026
+Fig. 5 Image of answer of Quiz026
  ## Running Code:
 <img width="432" alt="Screen Shot 2023-11-16 at 13 33 56" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/f05ef5b8-619b-4209-8232-f7f22790164e">
 
- Fig. 7 Image of code running of Quiz 026
-
- ## Flowchart:
-
- Fig. 8 Image of flowchart of Quiz 026
+ Fig. 6 Image of code running of Quiz 026
 
