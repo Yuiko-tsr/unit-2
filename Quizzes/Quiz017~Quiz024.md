@@ -236,8 +236,44 @@ Fig. 23 Image of answer of Quiz 022
  ## Running Code:
 <img width="469" alt="Screen Shot 2023-11-16 at 12 56 29" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5616f065-4bdc-4e86-bd6e-2c1f2e1a78b8">
 
- Fig. 18 Image of code running of Quiz 020
+ Fig. 24 Image of code running of Quiz 022
 
  ## Flowchart:
 
- Fig. 19 Image of flowchart of Quiz 020
+ Fig. 25 Image of flowchart of Quiz 022
+
+# Quiz023:
+ ## Question:
+<img width="1082" alt="Screen Shot 2023-11-16 at 12 56 44" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/88f61ea5-67a0-4be2-ae47-93901f97b091">
+
+ Fig. 26 Image of question of Quiz 023
+ ## Answer:
+ ```.py
+def produce():
+    st = -10
+    len=10
+    x = []
+    y = []
+    for i in range(101):
+        x.append(st)
+        y_out = abs(st)
+        y.append(y_out)
+        st += 0.2
+    return x, y
+
+data_x, data_y = produce()
+from matplotlib import pyplot as plt
+plt.plot(data_x, data_y, color="red", marker= '.')
+plt.ylabel("$f(x)=|x|$")
+plt.show()
+```
+ Fig. 27 Image of question of Quiz 023
+
+ ## Running Code:
+<img width="469" alt="Screen Shot 2023-11-16 at 12 56 29" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5616f065-4bdc-4e86-bd6e-2c1f2e1a78b8">
+
+ Fig. 28 Image of code running of Quiz 023
+
+ ## Flowchart:
+
+ Fig. 29 Image of flowchart of Quiz 023
