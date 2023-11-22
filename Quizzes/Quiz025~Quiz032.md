@@ -102,6 +102,7 @@ print(case2)
 <img width="646" alt="Screen Shot 2023-11-22 at 11 12 19" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/a577c461-4c93-4a2f-9800-471b3369ae75">
 
 Fig. 8 Image of answer of Quiz 027
+
 <img width="630" alt="Screen Shot 2023-11-22 at 11 14 38" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/65c51b2c-0e03-48a3-87a1-17abaa19e38a">
 
 Fig. 9 Image of answer of Quiz 027
