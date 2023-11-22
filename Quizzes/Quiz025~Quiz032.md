@@ -51,6 +51,7 @@ Fig. 2 Image of answer of Quiz 025
 
  # Quiz026:
  ## Question:
+<img width="1058" alt="Screen Shot 2023-11-22 at 11 07 15" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/ec35df7d-0b48-4b6d-9785-0eb00a22668d">
 
  Fig. 4 Image of question of Quiz 026
  ## Answer:
@@ -79,3 +80,32 @@ Fig. 5 Image of answer of Quiz026
 
  Fig. 6 Image of code running of Quiz 026
 
+# Quiz027:
+ ## Question:
+<img width="1069" alt="Screen Shot 2023-11-22 at 11 06 56" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/3f5b9095-7c9a-4828-87f9-5e438a5d1bf8">
+
+ Fig. 7 Image of question of Quiz 027
+ ## Answer:
+ ```.py
+def count_letter(my_dict, msg):
+    for letter in msg:
+        if letter in my_dict:
+            my_dict[letter] += 1
+    return my_dict
+
+case1 = count_letter({"w":0,"l":0,"c":0},"hello world")
+print(case1)
+
+case2 = count_letter({"a":0,"e":0,"i":0,"o":0,"u":0}, "Why did I choose CS?")
+print(case2)
+ ```
+<img width="646" alt="Screen Shot 2023-11-22 at 11 12 19" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/a577c461-4c93-4a2f-9800-471b3369ae75">
+
+Fig. 8 Image of answer of Quiz 027
+<img width="630" alt="Screen Shot 2023-11-22 at 11 14 38" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/65c51b2c-0e03-48a3-87a1-17abaa19e38a">
+
+Fig. 9 Image of answer of Quiz 027
+ ## Running Code:
+ <img width="834" alt="Screen Shot 2023-11-22 at 11 10 38" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5c1b09f3-7ea6-4840-8c07-b4440917cf67">
+
+ Fig. 10 Image of code running of Quiz 027
