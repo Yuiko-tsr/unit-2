@@ -116,6 +116,27 @@ Fig. 9 Image of answer of Quiz 027
 
  Fig. 11 Image of question of Quiz 028
  ## Answer a:
+ ```.py
+def sort_dict(in_dict):
+    x = []
+    k = []
+    for i in in_dict.values():
+        x += [i]
+    for m in in_dict.keys():
+        k += [m]
+    for i in range(len(x)):
+        for n in range(i+1, len(x)):
+            if x[n] < x[i]:
+                x[i],x[n] = x[n],x[i]
+                k[i],k[n] = k[n],k[i]
+    return x,k
+
+case1 = sort_dict({"apple":5, "banana":2, "orange":8,"grape":1})
+print(case1)
+
+case2 = sort_dict({"python":3,"java":8,"c++":5,"javascript":2})
+print(case2)
+```
  ## Answer b:
  ```.py
  import matplotlib.pyplot as plt
@@ -147,5 +168,11 @@ plt.xlabel("x", fontsize = 20)
 plt.ylabel("$y=sin(2*pi*x)$", fontsize = 15)
 plt.show()
 ```
-## Running Code 
+## Running Code a: 
+<img width="609" alt="Screen Shot 2023-11-23 at 9 12 21" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/6a3a3996-ca05-4cc1-a069-e3073cdcc332">
+
+Fig.12 Image of code running for Quiz 028
+## Running Code b:
 <img width="541" alt="Screen Shot 2023-11-23 at 9 05 04" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/2ecd0af7-fb2e-4cf3-a676-a2b7040d8197">
+
+Fig.13 Image of code running for Quiz 028
