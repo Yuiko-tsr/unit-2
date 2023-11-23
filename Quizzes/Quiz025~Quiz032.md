@@ -110,3 +110,42 @@ Fig. 9 Image of answer of Quiz 027
  <img width="834" alt="Screen Shot 2023-11-22 at 11 10 38" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5c1b09f3-7ea6-4840-8c07-b4440917cf67">
 
  Fig. 10 Image of code running of Quiz 027
+
+# Quiz028:
+ ## Question:
+
+ Fig. 11 Image of question of Quiz 028
+ ## Answer a:
+ ## Answer b:
+ ```.py
+ import matplotlib.pyplot as plt
+import numpy as np
+
+plt.style.use('ggplot')
+
+plt.xlabel("X)")
+plt.ylabel("Y")
+
+def produce ():
+   x_out = []
+   y_out = []
+   x = 0
+   for _ in range(100):
+       y = np.sin(2 * np.pi * x)
+       x_out.append(x)
+       y_out.append(y)
+       x += 0.01
+
+   return y_out, x_out
+
+import matplotlib.pyplot as plt
+
+plt.style.use('ggplot')
+y,x =produce()
+plt.plot(x,y, color = "r", marker = "o")
+plt.xlabel("x", fontsize = 20)
+plt.ylabel("$y=sin(2*pi*x)$", fontsize = 15)
+plt.show()
+```
+## Running Code 
+<img width="541" alt="Screen Shot 2023-11-23 at 9 05 04" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/2ecd0af7-fb2e-4cf3-a676-a2b7040d8197">
