@@ -14,7 +14,7 @@ Considering the budgetary constrains of the client and the hardware requirements
 
 **Design statement**
 
-``` Fill out here```
+We will create a program that will calculate the average of the humidity and temperature of a room using three sensors during the 48 hours the program runs. After measuring the average we will create a graph using these data to compare with the optimal humidity/temperature so the nurses can use this data to improve the students' living environments. We will do this by using python and three DHT_11 sensors to collect the humidity and temperature. The program will store the data to a csv file and upload this data to the "192.168.6.153" server to prevent the loss of information
 
 ## Success Criteria
 
