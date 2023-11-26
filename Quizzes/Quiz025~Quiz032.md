@@ -176,3 +176,30 @@ Fig.12 Image of code running for Quiz 028
 <img width="541" alt="Screen Shot 2023-11-23 at 9 05 04" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/2ecd0af7-fb2e-4cf3-a676-a2b7040d8197">
 
 Fig.13 Image of code running for Quiz 028
+
+# Quiz029:
+ ## Question:
+<img width="1073" alt="Screen Shot 2023-11-27 at 8 13 08" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/4bbc4c25-19c2-45fa-bf98-ab1cb792fc1d">
+
+ Fig. 14 Image of question of Quiz 028
+ ## Answer:
+ ```.py
+
+```
+
+Fig. 15 Answer for a 
+## Running Code: 
+
+Fig. 16 Image of code running
+
+# Quiz030:
+ ## Question:
+
+ Fig. 17 Image of question of Quiz 028
+ ## Answer:
+ ```.py
+
+```
+## Running Code: 
+<img width="442" alt="Screen Shot 2023-11-27 at 8 10 28" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/1a3103ab-5754-4ede-9f4b-7a583a6c1656">
+Fig. 18 Image of code running
