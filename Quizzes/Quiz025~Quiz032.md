@@ -185,11 +185,22 @@ Fig.13 Image of code running for Quiz 028
  Fig. 14 Image of question of Quiz 028
  ## Answer:
  ```.py
+def invert(dictionary):
+    invert = {value: key for key, value in dictionary.items()}
+    return invert
 
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+inverted_dict = invert(dict1)
+print(inverted_dict)
+
+dict2 = {'bob':26,'alice':30,'carl':40}
+inverted_dict2 = invert(dict2)
+print(inverted_dict2)
 ```
 
 Fig. 15 Answer for a 
 ## Running Code: 
+<img width="383" alt="Screen Shot 2023-11-27 at 8 30 47" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/c1f5c80d-f863-4213-8078-8d8945f213d2">
 
 Fig. 16 Image of code running
 
