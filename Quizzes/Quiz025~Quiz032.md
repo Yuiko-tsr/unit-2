@@ -113,6 +113,7 @@ Fig. 9 Image of answer of Quiz 027
 
 # Quiz028:
  ## Question:
+<img width="1077" alt="Screen Shot 2023-11-27 at 8 22 02" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/c8f8c8ca-29ce-4c61-8e6f-e93ea542205b">
 
  Fig. 11 Image of question of Quiz 028
  ## Answer a:
