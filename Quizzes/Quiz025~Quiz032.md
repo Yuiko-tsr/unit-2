@@ -198,8 +198,44 @@ Fig. 16 Image of code running
  Fig. 17 Image of question of Quiz 028
  ## Answer:
  ```.py
+import requests
+import matplotlib.pyplot as plt
+import numpy as np
 
+def get_sensor(id:int=2, ip:str="192.168.6.153"):
+    request = requests.get(f"http://{ip}/readings")
+    data = request.json()
+    sensors = data["readings"][0]
+    sensor = []
+    for s in sensors:
+        if s["sensor_id"]==id:
+            sensor.append(s["value"])
+
+    return sensor
+
+def smoothing(x:list,size_window:int=5):
+    smooth_x = []
+    t = []
+    for i in range(200, 400, size_window//2):
+        points = sum(x[i:i+size_window])/size_window
+        smooth_x.append(points)
+        t.append(i)
+
+    return t, smooth_x
+
+
+sensor2= get_sensor()
+print(sensor2)
+
+x,y = smoothing(x=sensor2)
+plt.plot(x,y)
+coefficients = np.polyfit(x, y, 1)
+line_of_best_fit = np.polyval(coefficients, x)
+plt.plot(x,line_of_best_fit)
+
+plt.show()
 ```
 ## Running Code: 
-<img width="442" alt="Screen Shot 2023-11-27 at 8 10 28" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/1a3103ab-5754-4ede-9f4b-7a583a6c1656">
+<img width="512" alt="Screen Shot 2023-11-27 at 8 20 40" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/73d1e449-c340-41f6-bb63-921f6e1d50fe">
+
 Fig. 18 Image of code running
