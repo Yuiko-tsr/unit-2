@@ -12,7 +12,7 @@ Considering the client requirements an adequate solution includes a low cost sen
 
 Considering the budgetary constrains of the client and the hardware requirements, the software tool that I proposed for this solution is Python. Python's open-source nature and platform independence contribute to the long-term viability of the system. The use of Python simplifies potential future enhancements or modifications, allowing for seamless scalability without the need for extensive redevelopment [^5][^6]. In comparison to the alternative C or C++, which share similar features, Python is a High level programming language (HLL) with high abstraction [^7]. For example, memory management is automatic in Python whereas it is responsability of the C/C++ developer to allocate and free up memory [^7], this could result in faster applications but also memory problems. In addition a HLL language will allow me and future developers extend the solution or solve issues proptly.  
 
-**Design statement**
+## Design statement
 
 We will create a program that will calculate the average of the humidity and temperature of a room using three sensors during the 48 hours the program runs. After measuring the average we will create a graph using these data to compare with the optimal humidity/temperature so the nurses can use this data to improve the students' living environments. We will do this by using python and three DHT_11 sensors to collect the humidity and temperature. The program will store the data to a csv file and upload this data to the "192.168.6.153" server to prevent the loss of information
 
