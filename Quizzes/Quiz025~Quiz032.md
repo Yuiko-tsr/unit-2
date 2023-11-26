@@ -198,7 +198,9 @@ inverted_dict2 = invert(dict2)
 print(inverted_dict2)
 ```
 
+<img width="821" alt="Screen Shot 2023-11-27 at 8 35 46" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/671da302-aa3f-4706-9473-eb8254ebe229">
 Fig. 15 Answer for a 
+
 ## Running Code: 
 <img width="383" alt="Screen Shot 2023-11-27 at 8 30 47" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/c1f5c80d-f863-4213-8078-8d8945f213d2">
 
