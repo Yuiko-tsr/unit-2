@@ -27,10 +27,10 @@ The nurses want a remote server that they can access online to monitor the tempe
 [^7]: Real Python. “Python vs C++: Selecting the Right Tool for the Job.” Real Python, Real Python, 19 June 2021, https://realpython.com/python-vs-cpp/#memory-management. 
 
 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
-1. ```[HL]``` The local variables will be measure using a set of 3 sensors around the dormitory.
-2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
+1. The local variables will be measure using a set of 3 sensors around the dormitory.
+2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
 3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
-4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server as a backup.
+4.  Posted to the remote server as a backup.
 5. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 6. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 
@@ -42,23 +42,19 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 # Criteria B: Design
 
-## System Diagram **SL**
-
-![SL](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/6161f2f6-67c5-4742-9961-e46475376370)
-
-**Fig.1** shows the system diagram for the proposed solution (**SL**). The indoor variables will be measured using an Arduino microprocessor and one sensor DHT11 conencted to the local computer (Laptop) located inside a room. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally.
+## System Diagram 
 
 
-![HL](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/4891d5e9-b8ab-46ed-bd75-b606e25e3383)
+(https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/4891d5e9-b8ab-46ed-bd75-b606e25e3383)
 
-**Fig.2** shows the system diagram for the proposed solution (**HL**). The indoor variables will be measured using an Arduino and three DHT11 sensors located inside a room. Three sensors are used to determine more precisely the physical values and include measurement uncertainty. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally and a backup copy will be store in the remote server using the **Weather API**. 
+**Fig.2** shows the system diagram for the proposed solution. The indoor variables will be measured using an Arduino and three DHT11 sensors located inside a room. Three sensors are used to determine more precisely the physical values and include measurement uncertainty. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally and a backup copy will be store in the remote server using the **Weather API**. 
 
 
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1      | | Write the Problem context                        | 10min         | Nov 22                 | A         |
-| 2      | | Write the Proposed Solution                        | 20min         | Nov 24                 | A         |
+| 1      | Write the Problem context | Write the Problem context                        | 10min         | Nov 22                 | A         |
+| 2      |Write the Proposed Solution | Write the Proposed Solution                        | 20min         | Nov 24                 | A         |
 
 ## Test Plan
 
