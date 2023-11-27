@@ -1,4 +1,5 @@
-![11e470e9022f4fc5b367429bcbb285bc](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/1d14b1d3-ae39-4ef3-8ec9-3329630eacae)
+
+![Screen Shot 2023-11-27 at 9 06 34](https://github.com/Yuiko-tsr/unit-2/assets/142757977/5197c956-1981-4c54-a813-4b4cad738ce8)
 
 # Unit 2: A Distributed Weather Station for ISAK
 
