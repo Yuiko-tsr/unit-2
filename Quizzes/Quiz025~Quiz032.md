@@ -254,3 +254,54 @@ plt.show()
 <img width="512" alt="Screen Shot 2023-11-27 at 8 20 40" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/73d1e449-c340-41f6-bb63-921f6e1d50fe">
 
 Fig. 18 Image of code running
+
+# Quiz031:
+ ## Question:
+
+ Fig. 19 Image of question of Quiz 031
+ ## Answer:
+ ```.py
+import requests
+import matplotlib.pyplot as plt
+def get_sensor(id:int=1, ip:str="192.168.6.153"):
+    request = requests.get(f"http://{ip}/readings")
+    data = request.json()
+    sensors = data["readings"][0]
+    sensor = []
+    for s in sensors:
+        if s["sensor_id"]==id:
+            sensor.append(s["value"])
+    return sensor
+
+
+def smoothing(x:list,size_window:int=5):
+    smooth_x = []
+    t = []
+    for i in range(0, len(x), size_window):
+        points = sum(x[i:i+size_window])/size_window
+        smooth_x.append(points)
+        t.append(i)
+
+    return t, smooth_x
+
+sensor1= get_sensor()
+sensor2 = get_sensor(id=2)
+
+sensor3=[]
+for i in range(len(sensor1)):
+    sensor3.append(sensor1[i]+sensor2[i])
+
+x,y = smoothing(x=sensor3)
+plt.subplot(3,1,1)
+plt.plot(sensor1)
+plt.subplot(3,1,2)
+x,y = smoothing(x=sensor2)
+plt.plot(x,y)
+plt.subplot(3,1,3)
+plt.plot(sensor3)
+plt.show()
+```
+## Running Code: 
+<img width="528" alt="Screen Shot 2023-11-29 at 9 29 39" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/e314b6de-6614-4b64-8e03-f7ce54186b53">
+
+Fig. 20 Image of code running
