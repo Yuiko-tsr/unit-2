@@ -56,6 +56,7 @@ https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/4891d5e9-b8ab-46ed
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1      | Write the Problem context | Write the Problem context                        | 10min         | Nov 22                 | A         |
 | 2      |Write the Proposed Solution | Write the Proposed Solution                        | 20min         | Nov 24                 | A         |
+|3| Writng code ||30|Nov29|D|
 
 ## Test Plan
 
