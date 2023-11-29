@@ -45,7 +45,8 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 ## System Diagram 
 
-![Uploading Screen Shot 2023-11-29 at 10.01.54.png…]()
+![Screen Shot 2023-11-29 at 10 01 54](https://github.com/Yuiko-tsr/unit-2/assets/142757977/e3c4b668-ce9c-466b-b991-fb31415cf15e)
+
 
 
 **Fig.2** shows the system diagram for the proposed solution. The indoor variables will be measured using an Arduino and three DHT11 sensors located inside a room. Three sensors are used to determine more precisely the physical values and include measurement uncertainty. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally and a backup copy will be store in the remote server using the **Weather API**. 
