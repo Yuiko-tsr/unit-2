@@ -327,16 +327,6 @@ def get_sensor(id:int=1, ip:str="192.168.6.153"):
     for s in sensors:
         if s["sensor_id"]==id:
             sensor.append(s["value"])
-    #
-    # if id ==1:
-    #     with open(f"server1.csv", 'a') as myfile:
-    #         myfile.writelines(sensor)
-    # if id ==2:
-    #     with open(f"server2.csv", 'a') as myfile:
-    #         myfile.writelines(sensor)
-    # if id ==3:
-    #     with open(f"server3.csv", 'a') as myfile:
-    #         myfile.writelines(sensor)
     return sensor
 
 
@@ -375,7 +365,9 @@ plt.plot(sensors[0],color="black")
 plt.title("Sensor 4")
 box2.set_xlim(0, 800)
 box2.set_ylim(0,100)
-box1 = fig.add_subplot(grid[1:2,1:3])
+box2.set_xticks([0, 200, 400, 600, 800])
+box2.set_yticks([0, 50, 100])
+box1 = fig.add_subplot(grid[0:3,1:3])
 plt.plot(difference, color="red")
 plt.title("Difference of the two sensors")
 box1.set_xlim(0, 800)
@@ -385,9 +377,11 @@ plt.plot(sensors[1],color="black")
 plt.title("Sensor 5")
 box3.set_xlim(0, 800)
 box3.set_ylim(0, 100)
+box3.set_xticks([0, 200, 400, 600, 800])
+box3.set_yticks([0, 50, 100])
 plt.show()
  ```
  ## Running Code:
-<img width="861" alt="Screen Shot 2023-11-30 at 13 14 27" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/6395bcd6-2281-410b-9a9a-9f9b6e53879a">
+<img width="893" alt="Screen Shot 2023-11-30 at 13 23 28" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/40192eeb-7d57-47c0-8c29-865009ea8afe">
 
  Fig. 22 Image of code running of Quiz 032
