@@ -305,3 +305,89 @@ plt.show()
 <img width="528" alt="Screen Shot 2023-11-29 at 9 29 39" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/e314b6de-6614-4b64-8e03-f7ce54186b53">
 
 Fig. 20 Image of code running
+
+# Quiz032:
+ ## Question:
+<img width="1068" alt="Screen Shot 2023-11-16 at 13 41 44" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/89aaec6f-52f3-434b-9d83-3e11152c629b">
+
+ Fig. 21 Image of question of Quiz 032
+ ## Answer:
+ ```.py
+from matplotlib.gridspec import GridSpec
+
+import matplotlib.pyplot as plt
+import matplotlib
+import requests
+
+def get_sensor(id:int=1, ip:str="192.168.6.153"):
+    request = requests.get(f"http://{ip}/readings")
+    data = request.json()
+    sensors = data["readings"][0]
+    sensor = []
+    for s in sensors:
+        if s["sensor_id"]==id:
+            sensor.append(s["value"])
+    #
+    # if id ==1:
+    #     with open(f"server1.csv", 'a') as myfile:
+    #         myfile.writelines(sensor)
+    # if id ==2:
+    #     with open(f"server2.csv", 'a') as myfile:
+    #         myfile.writelines(sensor)
+    # if id ==3:
+    #     with open(f"server3.csv", 'a') as myfile:
+    #         myfile.writelines(sensor)
+    return sensor
+
+
+def smoothing(x:list,size_window:int=5):
+    smooth_x = []
+    t = []
+    for i in range(0, len(x), size_window):
+        points = sum(x[i:i+size_window])/size_window
+        smooth_x.append(points)
+        t.append(i)
+
+    return t, smooth_x
+
+plt.style.use('ggplot')
+matplotlib.use('MacOSX')
+# step 1 get sensors
+sensors = []
+for s in [4,5]:
+    data = get_sensor(id=s)
+    sensors.append(data)
+    print(f"Sensor {s} obtained with {len(data)} samples")
+
+num_samples = len(sensors[1])
+difference = []
+for i in range(num_samples):
+    total = 0
+    for s in sensors:
+        total -= s[i]
+    difference.append(total/2)
+
+fig = plt.figure(figsize = (10,8))
+grid = GridSpec(3,4,figure=fig)
+plt.subplots_adjust(wspace=0.5)
+box2 = fig.add_subplot(grid[1,0])
+plt.plot(sensors[0],color="black")
+plt.title("Sensor 4")
+box2.set_xlim(0, 800)
+box2.set_ylim(0,100)
+box1 = fig.add_subplot(grid[1:2,1:3])
+plt.plot(difference, color="red")
+plt.title("Difference of the two sensors")
+box1.set_xlim(0, 800)
+box1.set_ylim(-70, -20)
+box3 = fig.add_subplot(grid[1,3])
+plt.plot(sensors[1],color="black")
+plt.title("Sensor 5")
+box3.set_xlim(0, 800)
+box3.set_ylim(0, 100)
+plt.show()
+ ```
+ ## Running Code:
+<img width="861" alt="Screen Shot 2023-11-30 at 13 14 27" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/6395bcd6-2281-410b-9a9a-9f9b6e53879a">
+
+ Fig. 22 Image of code running of Quiz 032
