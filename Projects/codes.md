@@ -1,3 +1,4 @@
+```.py
 import requests
 import time
 import serial
@@ -49,3 +50,6 @@ for hour in range(hours):
                 humidity = float(msg[1])
                 temperature = float(msg[3])
             send_data(sensor["name"], temperature, humidity)
+
+
+```
