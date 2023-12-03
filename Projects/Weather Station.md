@@ -60,7 +60,8 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 |3| Writng code ||30 min|Nov 29|C|
 |4|Writing code| |2 hours|Dec 2|C|
 |5| Making arduino  board ||40 min|Dec 3|C|
-|6|Writing code | Wrote code which sends data to ISAK router|2 hours 30 min|Dec 3|C|
+|6|Writing code | Wrote code which sends data to ISAK router|2 hours 30 min|Dec 3|A, C|
+|7|Making scheme for placing the sensors|Chose the best locations to put every sensor and reflected on the map of the room|20 min|Dec 3|C|
 
 ## Test Plan
 
@@ -70,13 +71,18 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 ## Development
 
-### The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours.
-The local variables will be measure using a set of 3 sensors around the dormitory.
-The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
-The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
-Posted to the remote server as a backup.
-The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
-The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+### 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours.
+### 2.The local variables will be measure using a set of 3 sensors around the dormitory.
+We used 3 sensors to collect data about humidity and temperature around the room. The sensors were attached to the bed, desk and place near the window, which lets the client see conditions in locations where students spend more of their time, and compare the average indicator with norms.
+
+![Web_Photo_Editor](https://github.com/Yuiko-tsr/unit-2/assets/142757977/7c4e5410-04ae-46ff-8ebc-7f4d74ff2b37)
+
+
+### 3. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
+### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
+### 5. Posted to the remote server as a backup.
+### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 
 
 
