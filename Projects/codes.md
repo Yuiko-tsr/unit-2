@@ -50,9 +50,10 @@ for hour in range(hours):
                 humidity = float(msg[1])
                 temperature = float(msg[3])
             send_data(sensor["name"], temperature, humidity)
+```
 
-
-
+Yuiko Dec 3rd
+```.py
 from matplotlib.gridspec import GridSpec
 import matplotlib.pyplot as plt
 import numpy as np
@@ -62,13 +63,14 @@ from unit2_lib import get_sensor, smoothing
 import requests
 
 ip = "192.168.6.142"
+
 #add user
 new_user = {"username": "agatha", 'password':'1864'}
 
 req = requests.post(f'http://{ip}/register', json=new_user)
 print(req.json())
 
-
+#login
 user = {"username": "agatha", 'password':'1864'}
 
 req = requests.post(f'http://{ip}/login', json=user)
@@ -87,6 +89,11 @@ def read():
 # Connect to Arduino
 id = "cu.usbserial-10"
 arduino = serial.Serial(port=f"/dev/{id}", baudrate=9600, timeout=0.1)
+sensor_bed = {"type": "Temperature", "location": "R1-15b", "name": "sensor_bed", "unit": "2"}
+sensor_desk = {"type": "Temperature", "location": "R1-15b", "name": "sensor_desk", "unit": "2"}
+sensor_window = {"type": "Temperature", "location": "R1-15b", "name": "sensor_window", "unit": "2"}
+
+sensors = [sensor_bed, sensor_desk, sensor_window]
 
 # Collect data from sensors and put in csv
 num_samples = 100
@@ -102,18 +109,13 @@ for i in range(num_samples):
     temp = msg.split(",")[3:]
     humidity_data.append(humid)
     temperature_data.append(temp)
+
     with open(f"humidity.csv", 'a') as myfile:
         myfile.writelines(f"{humid}\n")
     with open(f"temperature.csv", 'a') as myfile:
         myfile.writelines(f"{temp}\n")
 
 #add data to server
-def senddata(value, sensor_id):
-    new_record = {
-        "datetime": str(datetime.isoformat(datetime.now())),
-        "sensor_id": sensor_id,
-        "value": value
-    }
 access_token = r.json()["access_token"]
 auth = {"Authorization": f"Bearer {access_token}"}
 
@@ -125,18 +127,14 @@ print(r.json())
 access_token = r.json()["access_token"]
 auth = {"Authorization": f"Bearer {access_token}"}
 
-new_record ={"datetime":datetime.isoformat(datetime.now()),"sensor_id":1, "value":temp}
+new_record ={"datetime":datetime.isoformat(datetime.now()),"sensor_id":1, "value":[temp, humid]}
 
 r = requests.post(f'http://{ip}/reading/new', json=new_record, headers=auth)
 print(r.json())
 
 
 #get data from server
-req = requests.get('http://192.168.6.142/readings')
+req = requests.get(f'http://{ip}/readings')
 data = req.json()
 readings = data['readings'][0]
 print(readings)
-
-
-
-```
