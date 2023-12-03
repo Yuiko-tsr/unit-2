@@ -60,8 +60,8 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 |3| Writng code ||30 min|Nov 29|C|
 |4|Writing code| |2 hours|Dec 2|C|
 |5| Making arduino  board ||40 min|Dec 3|C|
-|6|Writing code | Wrote code which sends data to ISAK router|2 hours 30 min|Dec 3|A, C|
-|7|Making scheme for placing the sensors|Chose the best locations to put every sensor and reflected on the map of the room|20 min|Dec 3|C|
+|6|Writing code | Wrote code which sends data to ISAK router|2 hours 30 min|Dec 3|C|
+|7|Making scheme for placing the sensors|Chose the best locations to put every sensor and reflected on the map of the room|20 min|Dec 3|A, C|
 
 ## Test Plan
 
