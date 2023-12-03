@@ -70,6 +70,15 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 ## Development
 
+### The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours.
+The local variables will be measure using a set of 3 sensors around the dormitory.
+The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
+The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
+Posted to the remote server as a backup.
+The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+
+
 
 # Criteria D: Functionality
 
