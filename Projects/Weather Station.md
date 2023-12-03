@@ -55,12 +55,12 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1      | Write the Problem context | Write the Problem context                        | 10min         | Nov 22                 | A         |
-| 2      |Write the Proposed Solution | Write the Proposed Solution                        | 20min         | Nov 24                 | A         |
+|1| Write the Problem context | Write the Problem context                        | 10min         | Nov 22                 | A         |
+|2|Write the Proposed Solution | Write the Proposed Solution                        | 20min         | Nov 24                 | A         |
 |3| Writng code ||30 min|Nov 29|C|
 |4|Writing code| |2 hours|Dec 2|C|
 |5| Making arduino  board ||40 min|Dec 3|C|
-|Writing code | Wrote code which sends data to ISAK router|2 hours 30 min|Dec 3|C|
+|6|Writing code | Wrote code which sends data to ISAK router|2 hours 30 min|Dec 3|C|
 
 ## Test Plan
 
