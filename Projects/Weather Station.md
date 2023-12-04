@@ -89,3 +89,59 @@ We used 3 sensors to collect data about humidity and temperature around the room
 # Criteria D: Functionality
 
 A 7 min video demonstrating the proposed solution with narration
+
+```.py
+from matplotlib.gridspec import GridSpec
+import matplotlib.pyplot as plt
+import numpy as np
+import serial
+import datetime
+import requests
+
+ip = "192.168.6.153"
+id = "cu.usbserial-10"
+
+def smoothing(x, smoothing_win=5, overlap=1):
+    smooth_x = []
+    t = []
+    for i in range(0, len(x), int(smoothing_win * overlap)):
+        smooth_x.append(sum(x[i:i + smoothing_win]) / smoothing_win)
+        t.append(i)
+    return t, smooth_x
+
+def login(ip="192.168.6.153"):
+    user = {"username": "agako", 'password': '1234'}
+
+    req = requests.post('http://192.168.6.142/login', json=user)
+    access_token = req.json()["access_token"]
+    print(access_token)
+    return access_token
+
+def create_sensor(name, type, location, ip="192.168.6.153"):
+    r = add_data()
+    access_token = r.json()["access_token"]
+    auth = {"Authorization": f"Bearer {access_token}"}
+
+    new_sensor = {"type": "Temperature", "location": "R2-10B", "name": "sensor_alex_bern_1", "unit": "C"}
+
+    r = requests.post('http://192.168.6.142/sensor/new', json=new_sensor, headers=auth)
+    print(r.json())
+
+def add_data(value, sensor_id, ip="192.168.6.153"):
+    access_token = login()
+    auth = {"Authorization": f"Bearer {access_token}"}
+
+    new_record = {"datetime": datetime.isoformat(datetime.now()), "sensor_id": 1, "value": temp}
+
+    r = requests.post('http://192.168.6.142/reading/new', json=new_record, headers=auth)
+    print(r.json())
+
+
+new_user = {"username": "yuiko                              ", 'password':'1234'}
+
+req = requests.post('http://192.168.6.142/register', json=new_user)
+print(req.json())
+
+x = create_sensor("tryout", type="temperature", location="Bed", ip="192.168.6.153")
+print(x)
+```
