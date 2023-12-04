@@ -127,6 +127,7 @@ def create_sensor(name, type, location, ip="192.168.6.153"):
     r = requests.post('http://192.168.6.142/sensor/new', json=new_sensor, headers=auth)
     print(r.json())
 
+#add info to server
 def add_data(value, sensor_id, ip="192.168.6.153"):
     access_token = login()
     auth = {"Authorization": f"Bearer {access_token}"}
@@ -136,12 +137,54 @@ def add_data(value, sensor_id, ip="192.168.6.153"):
     r = requests.post('http://192.168.6.142/reading/new', json=new_record, headers=auth)
     print(r.json())
 
+#read arduino
+def read_ardruino():
+    arduino = serial.Serial(port=f"/dev/{id}", baudrate=9600, timeout=0.1)
+    s1 = ""
+    while len(s1) < 1:
+        s1 = arduino.readline()
+    s2 = ""
+    while len(s2) < 1:
+        s2 = arduino.readline()
+    s3 = ""
+    while len(s3) < 1:
+        s3 = arduino.readline()
+    s1 = s1.decode("utf-8").strip("\r\n").split(",")
+    s2 = s2.decode("utf-8").strip("\r\n").split(",")
+    s3 = s3.decode("utf-8").strip("\r\n").split(",")
+    return s1, s2, s3
+#add to csv
+# def csv(data, sensor_id):
+#     if sensor_id == :
+#         if data is humidity:
+#             with open(s1humidity.csv, "w") as f:
+#                 f.writelines(data)
+#         if data is temperature:
+#             with open(s1temperature.csv, "w") as f:
+#                 f.writelines(data)
+#     if sensor_id == :
+#         if data is humidity:
+#             with open(s2humidity.csv, "w") as f:
+#                 f.writelines(data)
+#         if data is temperature:
+#             with open(s2temperature.csv, "w") as f:
+#                 f.writelines(data)
+#     if sensor_id == :
+#         if data is humidity:
+#             with open(s3humidity.csv, "w") as f:
+#                 f.writelines(data)
+#         if data is temperature:
+#             with open(s3temperature.csv, "w") as f:
+#                 f.writelines(data)
 
-new_user = {"username": "yuiko                              ", 'password':'1234'}
+new_user = {"username": "yuiko", 'password':'1234'}
 
 req = requests.post('http://192.168.6.142/register', json=new_user)
 print(req.json())
 
 x = create_sensor("tryout", type="temperature", location="Bed", ip="192.168.6.153")
 print(x)
+
+#create graph
+
 ```
