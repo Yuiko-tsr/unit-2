@@ -55,17 +55,17 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-|1| Write the Problem context | Write the Problem context                        | 10min         | Nov 22                 | A         |
+|1| Write the Problem context | Wrote the Problem context| 10min         | Nov 22                 | A         |
 |2|Write the Proposed Solution | Write the Proposed Solution                        | 20min         | Nov 24                 | A         |
-|3| Writng code ||30 min|Nov 29|C|
+|3|Writng code ||30 min|Nov 29|C|
 |4|Writing code| |2 hours|Dec 2|C|
-|5| Making arduino  board ||40 min|Dec 3|C|
+|5|Making arduino  board ||40 min|Dec 3|C|
 |6|Writing code | Wrote code which sends data to ISAK router|2 hours 30 min|Dec 3|C|
 |7|Making scheme for placing the sensors|Chose the best locations to put every sensor and reflected on the map of the room|20 min|Dec 3|A, C|
-|8|End the code|To end writing code which gets information from 3 sensors, sends this data to the server and csv file|30 min|Dec 5|D|
-|9|To correct the code |To find the reasons of all mistakes and eliminate errors|1 hour|Dec 5|D|
-|10|Work woth sensors|Install sensors throughout the room|20 min|Dec 5|D|
-|11|Get data|Got information about humidity and temperature in the room for 2 days|48 hour|Dec 5|D|
+|8|End the code|To end writing code which gets information from 3 sensors, sends this data to the server and csv file|30 min|Dec 5|C|
+|9|Correcting the code |To find the reasons of all mistakes and eliminate errors|1 hour|Dec 5|C|
+|10|Work woth sensors|Install sensors throughout the room|20 min|Dec 5|C|
+|11|Getting data|Got information about humidity and temperature in the room for 2 days|48 hour|Dec 5|C|
 
 ## Test Plan
 
