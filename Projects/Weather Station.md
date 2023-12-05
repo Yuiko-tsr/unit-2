@@ -94,12 +94,18 @@ A 7 min video demonstrating the proposed solution with narration
 from matplotlib.gridspec import GridSpec
 import matplotlib.pyplot as plt
 import numpy as np
+from datetime import datetime, timedelta
 import serial
-import datetime
+from time import sleep
 import requests
 
 ip = "192.168.6.153"
 id = "cu.usbserial-10"
+
+def createuser(user, ip="192.168.6.153"):
+    req = requests.post(f'http://{ip}/register', json=user)
+    print(req.json())
+
 
 def smoothing(x, smoothing_win=5, overlap=1):
     smooth_x = []
@@ -109,36 +115,26 @@ def smoothing(x, smoothing_win=5, overlap=1):
         t.append(i)
     return t, smooth_x
 
-def login(ip="192.168.6.153"):
-    user = {"username": "agako", 'password': '1234'}
-
-    req = requests.post('http://192.168.6.142/login', json=user)
+def login(user, ip="192.168.6.153"):
+    req = requests.post(f'http://{ip}/login', json=user)
     access_token = req.json()["access_token"]
-    print(access_token)
     return access_token
 
-def create_sensor(name, type, location, ip="192.168.6.153"):
-    r = add_data()
-    access_token = r.json()["access_token"]
-    auth = {"Authorization": f"Bearer {access_token}"}
 
-    new_sensor = {"type": "Temperature", "location": "R2-10B", "name": "sensor_alex_bern_1", "unit": "C"}
+def create_sensor(sensor,token, ip="192.168.6.153"):
 
-    r = requests.post('http://192.168.6.142/sensor/new', json=new_sensor, headers=auth)
+    auth = {"Authorization": f"Bearer {token}"}
+    r = requests.post(f'http://{ip}/sensor/new', json=sensor, headers=auth)
     print(r.json())
 
-#add info to server
-def add_data(value, sensor_id, ip="192.168.6.153"):
-    access_token = login()
-    auth = {"Authorization": f"Bearer {access_token}"}
+def add_data(value,token,id, ip="192.168.6.153"):
 
-    new_record = {"datetime": datetime.isoformat(datetime.now()), "sensor_id": 1, "value": temp}
+    auth = {"Authorization": f"Bearer {token}"}
+    new_record = {"datetime": datetime.isoformat(datetime.now()), "sensor_id": id, "value": value}
 
-    r = requests.post('http://192.168.6.142/reading/new', json=new_record, headers=auth)
+    r = requests.post(f'http://{ip}/reading/new', json=new_record, headers=auth)
     print(r.json())
-
-#read arduino
-def read_ardruino():
+def read_arduino():
     arduino = serial.Serial(port=f"/dev/{id}", baudrate=9600, timeout=0.1)
     s1 = ""
     while len(s1) < 1:
@@ -149,42 +145,76 @@ def read_ardruino():
     s3 = ""
     while len(s3) < 1:
         s3 = arduino.readline()
-    s1 = s1.decode("utf-8").strip("\r\n").split(",")
-    s2 = s2.decode("utf-8").strip("\r\n").split(",")
-    s3 = s3.decode("utf-8").strip("\r\n").split(",")
+    s1 = s1.decode("utf-8").strip("\r\n")
+    s2 = s2.decode("utf-8").strip("\r\n")
+    s3 = s3.decode("utf-8").strip("\r\n")
     return s1, s2, s3
-#add to csv
-# def csv(data, sensor_id):
-#     if sensor_id == :
-#         if data is humidity:
-#             with open(s1humidity.csv, "w") as f:
-#                 f.writelines(data)
-#         if data is temperature:
-#             with open(s1temperature.csv, "w") as f:
-#                 f.writelines(data)
-#     if sensor_id == :
-#         if data is humidity:
-#             with open(s2humidity.csv, "w") as f:
-#                 f.writelines(data)
-#         if data is temperature:
-#             with open(s2temperature.csv, "w") as f:
-#                 f.writelines(data)
-#     if sensor_id == :
-#         if data is humidity:
-#             with open(s3humidity.csv, "w") as f:
-#                 f.writelines(data)
-#         if data is temperature:
-#             with open(s3temperature.csv, "w") as f:
-#                 f.writelines(data)
 
-new_user = {"username": "yuiko", 'password':'1234'}
+def main():
+    start_time = datetime.now()
+    total_duration = timedelta(hours=48)  # Total duration for data collection
 
-req = requests.post('http://192.168.6.142/register', json=new_user)
-print(req.json())
+    while datetime.now() - start_time < total_duration:
+        # Collect data for 5 minutes
+        end_time = datetime.now() + timedelta(minutes=5)
+        while datetime.now() < end_time:
+            s1, s2, s3 = read_arduino()
+            save_csv((s1, s2, s3))
+            sleep(300)  # Sleep for 10 seconds between readings
 
-x = create_sensor("tryout", type="temperature", location="Bed", ip="192.168.6.153")
-print(x)
+    print("Data collection complete.")
 
-#create graph
+def save_csv(data, file_name="reading_csv"):
+    s1, s2, s3 = data
+    print("Raw data:", s1, s2, s3)  # Add this line to print the raw data
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(file_name, "a") as f:
+        f. write(f"{timestamp},\n")
+        if ',' in s1:
+            humidity1, temperature1 = s1.split(',')
+            f.write(f"Sensor 1: Humidity: {humidity1} Temperature: {temperature1}\n")
+        if ',' in s2:
+            humidity2, temperature2 = s2.split(',')
+            f.write(f"Sensor 2: Humidity: {humidity2} Temperature: {temperature2}\n")
+        if ',' in s3:
+            humidity3, temperature3 = s3.split(',')
+            f.write(f"Sensor 3: Humidity: {humidity3} Temperature: {temperature3}\n\n")
+
+def measure(stt, swt, sbt):
+    s1, s2, s3 = read_arduino()
+
+    save_csv(data=s1, file_name="reading_st.csv")
+    save_csv(data=s2, file_name="reading_sw.csv")
+    save_csv(data=s3, file_name="reading_sb.csv")
+
+    add_data(s1, sensor_id=stt)
+    add_data(s2, sensor_id=swt)
+    add_data(s3, sensor_id=sbt)
+
+#
+# new_user = {"username": "yuiko", 'password':'1234'}
+#
+# req = requests.post('http://{ip}}/register', json=new_user)
+# print(req.json())
+#
+# x = create_sensor("tryout", type="temperature", location="Bed", ip="192.168.6.153")
+# print(x)
+agatha={"username": "agatha_unit2", 'password': 'a1b2c3'}
+# createuser(user=agatha)
+token=login(user=agatha)
+sensor_bed = {"type": "Temperature", "location": "R1-15", "name": "sensor_bed", "unit": "C"}
+sensor_desk = {"type": "Temperature", "location": "R1-15", "name": "sensor_desk", "unit": "C"}
+sensor_window = {"type": "Temperature", "location": "R1-15", "name": "sensor_window", "unit": "C"}
+sensor_bed = {"type": "Humidity", "location": "R1-15", "name": "sensor_bed", "unit": "%"}
+sensor_desk = {"type": "Temperature", "location": "R1-15", "name": "sensor_desk", "unit": "C"}
+sensor_window = {"type": "Temperature", "location": "R1-15", "name": "sensor_window", "unit": "C"}
+# create_sensor(sensor_bed,token)
+# create_sensor(sensor_desk, token)
+# create_sensor(sensor_window, token)
+
+add_data(25,token,48)
+
+measure(49,50,48)
+
 
 ```
