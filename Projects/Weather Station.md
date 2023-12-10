@@ -57,6 +57,11 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 **Fig 1** Flow chart of the smoothing function (Easiest function)
 This function allows us to make the graphs we make more smooth by taking the average of 5 data values for every 2 points.
 
+<img width="346" alt="Screen Shot 2023-12-10 at 16 34 56" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/d926544b-7314-4cb6-8f4c-58f5e8b8791f">
+
+**Fig 2** Flow chart of the main funciton (Medium level function)
+This function allows us to collect data every 5 minutes by using the measure function every five minutes.
+
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
