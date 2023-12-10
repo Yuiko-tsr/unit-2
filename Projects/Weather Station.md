@@ -62,6 +62,11 @@ This function allows us to make the graphs we make more smooth by taking the ave
 **Fig 2** Flow chart of the main funciton (Medium level function)
 This function allows us to collect data every 5 minutes by using the measure function every five minutes.
 
+<img width="246" alt="Screen Shot 2023-12-10 at 16 39 29" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/d4f452e9-24c8-43d0-80d3-ac80fa3cf577">
+
+**Fig 3** Flow chart of the create_sensor funciton (Most important function)
+This function allows us to create new sensors so we can store our data in the servers.
+
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
