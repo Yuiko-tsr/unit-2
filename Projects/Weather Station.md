@@ -51,6 +51,11 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 **Fig.2** shows the system diagram for the proposed solution. The indoor variables will be measured using an Arduino and three DHT11 sensors located inside a room. Three sensors are used to determine more precisely the physical values and include measurement uncertainty. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally and a backup copy will be store in the remote server using the **Weather API**. 
 
+## Flow Charts
+<img width="377" alt="Screen Shot 2023-12-10 at 16 29 03" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/5eeca73a-d292-455f-bd9c-0e87e8034e50">
+
+**Fig 1** Flow chart of the smoothing function (Easiest function)
+This function allows us to make the graphs we make more smooth by taking the average of 5 data values for every 2 points.
 
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
