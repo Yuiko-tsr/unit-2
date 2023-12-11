@@ -91,6 +91,7 @@ This function allows us to create new sensors so we can store our data in the se
 |19|Making poster|Continued to make the poster|1 hour|Dec 11|D|
 |20|TOK questions|Wrote 2 answers to TOK questions|40 min|Dec 11|A|
 |21|Text for the video|Wrote the text for final video|30 min|Dec 11|D|
+|22|Success Criteria|Wrote about 1-3 success criteria |40 min|Dec 11|A, D|
 ## Test Plan
 
 # Criteria C: Development
@@ -109,6 +110,8 @@ We used 3 sensors to collect data about humidity and temperature around the room
 ### 3. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
 ### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
 ### 5. Posted to the remote server as a backup.
+[見出しを追加.pdf](https://github.com/Yuiko-tsr/unit-2/files/13635312/default.pdf)
+
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 ## TOK questions
