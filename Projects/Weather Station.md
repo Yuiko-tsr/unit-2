@@ -102,17 +102,20 @@ This function allows us to create new sensors so we can store our data in the se
 
 ### 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours.
 ### 2.The local variables will be measure using a set of 3 sensors around the dormitory.
-We used 3 sensors to collect data about humidity and temperature around the room. The sensors were attached to the bed, desk and place near the window, which lets the client see conditions in locations where students spend more of their time, and compare the average indicator with norms.
+We used 3 sensors to collect data about humidity and temperature around the room (Fig. C.1).. The sensors were attached to the bed, desk and place near the window, which lets the client see conditions in locations where students spend more of their time, and compare the average indicator with norms.
 
 ![Web_Photo_Editor](https://github.com/Yuiko-tsr/unit-2/assets/142757977/7c4e5410-04ae-46ff-8ebc-7f4d74ff2b37)
 
-
+*Fig. C.1.* The sensors location
 ### 3. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
 ### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
 ### 5. Posted to the remote server as a backup.
-All data about humidity and temperature from 3 sensors are sent to csv file and remote server. Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
+All data about humidity and temperature from 3 sensors are sent to csv file and remote server (Fig. C.2). Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
 ![Screen Shot 2023-12-11 at 21 23 53](https://github.com/Yuiko-tsr/unit-2/assets/142757977/543f23c3-80bb-4f98-ba2c-b4fcdde9fb2b)
+*Fig.C.2 .* 
+
 ```.py
+
 def add_data(value, token, id, ip="192.168.6.153"):
     auth = {"Authorization": f"Bearer {token}"}
     new_record = {"datetime": datetime.isoformat(datetime.now()), "sensor_id": id, "value": value}
@@ -120,7 +123,9 @@ def add_data(value, token, id, ip="192.168.6.153"):
     r = requests.post(f'http://{ip}/reading/new', json=new_record, headers=auth)
     print(r.json())
 ```
+
 The part of code, which sent data to the server
+
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 ## TOK questions
