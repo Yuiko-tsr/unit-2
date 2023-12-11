@@ -81,7 +81,16 @@ This function allows us to create new sensors so we can store our data in the se
 |9|Correcting the code |To find the reasons of all mistakes and eliminate errors|1 hour|Dec 5|C|
 |10|Work woth sensors|Install sensors throughout the room|20 min|Dec 5|C|
 |11|Getting data|Got information about humidity and temperature in the room for 2 days|48 hour|Dec 5|C|
-
+|12|Video planning|Identified the main ideas for the final video|25 min|Dec 7|D|
+|13|Writing code|Wrote the code to display the received data in the form of graphs|1,5 hours|Dec 8|C|
+|14|Writing code|Wrote the code to display the received data in the form of graphs|1 hour|Dec 9|C|
+|15|Writing code|Ended the code to display the received data in the form of graphs|40 min|Dec 10|C|
+|16|Making poster|Replased the main objects in the poster|30 min|Dec 10|C|
+|17|Making system diagram|Made the system diagram of the code|1 hour|Dec 10|B|
+|18|Analyzing the data|Analyzed the received information and compared it with the norms|40 min|Dec 11|C|
+|19|Making poster|Continued to make the poster|1 hour|Dec 11|D|
+|20|TOK questions|Wrote 2 answers to TOK questions|40 min|Dec 11|A|
+|21|Text for the video|Wrote the text for final video|30 min|Dec 11|D|
 ## Test Plan
 
 # Criteria C: Development
@@ -102,6 +111,12 @@ We used 3 sensors to collect data about humidity and temperature around the room
 ### 5. Posted to the remote server as a backup.
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+### TOK questions
+## 1). How does our use of technology shape our understanding of the environment?
+Using technology in research enables people efficient data collection and analysis of temperature and humidity. Continuous monitoring over a 48-hour period allows us to observe variations in temperature and humidity levels throughout the day and promptly identify deviations from favorable norms. The ability to receive real-time information enables us to take immediate action, implementing necessary measures to address any anomalies as soon as they arise. Using technology let us to get to know the level of quality of our living conditions for their improvement if required                                 
+## 2). What responsibilities do we have as technologists when it comes to handling personal data related to our living spaces?
+## 3). What cultural and contextual factors might impact our interpretation of the results, especially when comparing our local readings with those from the campus?
+
 
 
 
