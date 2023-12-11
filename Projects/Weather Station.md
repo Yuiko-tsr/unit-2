@@ -110,8 +110,17 @@ We used 3 sensors to collect data about humidity and temperature around the room
 ### 3. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
 ### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
 ### 5. Posted to the remote server as a backup.
-[見出しを追加.pdf](https://github.com/Yuiko-tsr/unit-2/files/13635312/default.pdf)
+All data about humidity and temperature from 3 sensors are sent to csv file and remote server. Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
+![Screen Shot 2023-12-11 at 21 23 53](https://github.com/Yuiko-tsr/unit-2/assets/142757977/543f23c3-80bb-4f98-ba2c-b4fcdde9fb2b)
+```.py
+def add_data(value, token, id, ip="192.168.6.153"):
+    auth = {"Authorization": f"Bearer {token}"}
+    new_record = {"datetime": datetime.isoformat(datetime.now()), "sensor_id": id, "value": value}
 
+    r = requests.post(f'http://{ip}/reading/new', json=new_record, headers=auth)
+    print(r.json())
+```
+The part of code, which sent data to the server
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 ## TOK questions
