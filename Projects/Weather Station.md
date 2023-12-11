@@ -115,7 +115,26 @@ All data about humidity and temperature from 3 sensors are sent to csv file and 
 
 *Fig.C.2 .* 
 
+#### The part of code, which creates sensors 
+```.py
+def create_sensor(sensor,token, ip="192.168.6.153"):
 
+    auth = {"Authorization": f"Bearer {token}"}
+    r = requests.post(f'http://{ip}/sensor/new', json=sensor, headers=auth)
+    print(r.json())
+```
+
+#### List of the sensors 
+```.py
+sensor_bed = {"type": "Temperature", "location": "R1-15", "name": "sensor_bed", "unit": "C"}
+sensor_desk = {"type": "Temperature", "location": "R1-15", "name": "sensor_desk", "unit": "C"}
+sensor_window = {"type": "Temperature", "location": "R1-15", "name": "sensor_window", "unit": "C"}
+sensor_bed = {"type": "Humidity", "location": "R1-15", "name": "sensor_bed", "unit": "%"}
+sensor_desk = {"type": "Temperature", "location": "R1-15", "name": "sensor_desk", "unit": "C"}
+sensor_window = {"type": "Temperature", "location": "R1-15", "name": "sensor_window", "unit": "C"}
+```
+
+#### The part of code, which sent data to the server
 ```.py
 
 def add_data(value, token, id, ip="192.168.6.153"):
@@ -126,7 +145,7 @@ def add_data(value, token, id, ip="192.168.6.153"):
     print(r.json())
 ```
 
-The part of code, which sent data to the server
+
 
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
