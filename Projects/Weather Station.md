@@ -162,10 +162,16 @@ def add_data(value, token, id, ip="192.168.6.153"):
 
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+
 ## TOK questions
+
 ### 1). How does our use of technology shape our understanding of the environment?
+
 Using technology in research enables people efficient data collection and analysis of temperature and humidity. Continuous monitoring over a 48-hour period allows us to observe variations in temperature and humidity levels throughout the day and promptly identify deviations from favorable norms. The ability to receive real-time information enables us to take immediate action, implementing necessary measures to address any anomalies as soon as they arise. Using technology let us to get to know the level of quality of our living conditions for their improvement if required                                 
 ### 2). What responsibilities do we have as technologists when it comes to handling personal data related to our living spaces?
+
+Handling everyone’s personal data should be conducted with full assurance of anonymity. We as technologists must provide guarantee of this. Results of research about any living room have a big importance, because changes will also be made in case of non-compliance. Accordingly, all information must be 100% authentic and the analysis carried out as diligently as possible
+
 ### 3). What cultural and contextual factors might impact our interpretation of the results, especially when comparing our local readings with those from the campus?
 
 
