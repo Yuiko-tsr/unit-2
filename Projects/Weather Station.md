@@ -72,10 +72,10 @@ This function allows us to create new sensors so we can store our data in the se
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 |1| Write the Problem context | Wrote the Problem context| 10min         | Nov 22                 | A         |
 |2|Write the Proposed Solution | Write the Proposed Solution                        | 20min         | Nov 24                 | A         |
-|3|Writng code ||30 min|Nov 29|C|
-|4|Writing code| |2 hours|Dec 2|C|
-|5|Making arduino  board ||40 min|Dec 3|C|
-|6|Writing code | Wrote code which sends data to ISAK router|2 hours 30 min|Dec 3|C|
+|3|Writng code |Started to write a code which collects data and sends it to the server and csv file||30 min|Nov 29|C|
+|4|Writing code|Continued to write code |2 hours|Dec 2|C|
+|5|Arduino  board |installed all the necessary elements on the Arduino board|40 min|Dec 3|C|
+|6|Writing code |Continued to write code |2 hours 30 min|Dec 3|C|
 |7|Making scheme for placing the sensors|Chose the best locations to put every sensor and reflected on the map of the room|20 min|Dec 3|A, C|
 |8|End the code|To end writing code which gets information from 3 sensors, sends this data to the server and csv file|30 min|Dec 5|C|
 |9|Correcting the code |To find the reasons of all mistakes and eliminate errors|1 hour|Dec 5|C|
@@ -88,10 +88,12 @@ This function allows us to create new sensors so we can store our data in the se
 |16|Making poster|Replased the main objects in the poster|30 min|Dec 10|C|
 |17|Making system diagram|Made the system diagram of the code|1 hour|Dec 10|B|
 |18|Analyzing the data|Analyzed the received information and compared it with the norms|40 min|Dec 11|C|
-|19|Making poster|Continued to make the poster|1 hour|Dec 11|D|
+|19|Making poster|Continued to make the poster|1 hour|Dec 11|C|
 |20|TOK questions|Wrote 2 answers to TOK questions|40 min|Dec 11|A|
 |21|Text for the video|Wrote the text for final video|30 min|Dec 11|D|
-|22|Success Criteria|Wrote about 1-3 success criteria |40 min|Dec 11|A, D|
+|22|Success Criteria|Wrote about 1-3 success criteria and attached parts of the code and schemes|40 min|Dec 11|A, C|
+|23|Making poster|Wrote conclusion and recommendation and put in on the poster|20 min|Dec 12|A, C|
+|24|Success Criteria| 
 ## Test Plan
 
 # Criteria C: Development
@@ -108,7 +110,12 @@ We used 3 sensors to collect data about humidity and temperature around the room
 
 *Fig. C.1.* The sensors location
 ### 3. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
-### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
+
+### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standard deviation, minimum, maximum, and median.
+![Image_20231212_111059_941](https://github.com/Yuiko-tsr/unit-2/assets/142757977/dd8d5217-e39a-4d7f-a81b-94b20806243b)
+![Image_20231212_111059_881](https://github.com/Yuiko-tsr/unit-2/assets/142757977/1d3d079e-2772-4275-aeb9-b74cd084d5f3)
+![Image_20231212_111059_913](https://github.com/Yuiko-tsr/unit-2/assets/142757977/e015badc-42ad-48e7-9b37-64e2a9f616c0)
+
 ### 5. Posted to the remote server as a backup.
 All data about humidity and temperature from 3 sensors are sent to csv file and remote server (Fig. C.2). Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
 ![Screen Shot 2023-12-11 at 21 23 53](https://github.com/Yuiko-tsr/unit-2/assets/142757977/543f23c3-80bb-4f98-ba2c-b4fcdde9fb2b)
