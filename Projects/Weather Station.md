@@ -163,6 +163,7 @@ def add_data(value, token, id, ip="192.168.6.153"):
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 
+
 ## TOK questions
 
 ### 1). How does our use of technology shape our understanding of the environment?
