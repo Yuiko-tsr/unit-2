@@ -121,8 +121,9 @@ We used 3 sensors to collect data about humidity and temperature around the room
 
 ![Image_20231212_111059_913](https://github.com/Yuiko-tsr/unit-2/assets/142757977/e015badc-42ad-48e7-9b37-64e2a9f616c0)
 *Fig. C.4.3* Graph with data about the Humidity and Temperature levels from bed zone
+
 ### 5. Posted to the remote server as a backup.
-All data about humidity and temperature from 3 sensors are sent to csv file and remote server (Fig. C.2). Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
+All data about humidity and temperature from 3 sensors are sent to csv file and remote server (Fig. C.5.1). Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
 ![Screen Shot 2023-12-11 at 21 23 53](https://github.com/Yuiko-tsr/unit-2/assets/142757977/543f23c3-80bb-4f98-ba2c-b4fcdde9fb2b)
 
 *Fig.C.5.1* 
