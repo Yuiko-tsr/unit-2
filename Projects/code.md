@@ -1,3 +1,4 @@
+```.py
 from matplotlib.gridspec import GridSpec
 import matplotlib.pyplot as plt
 import numpy as np
