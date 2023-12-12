@@ -104,23 +104,28 @@ This function allows us to create new sensors so we can store our data in the se
 
 ### 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours.
 ### 2.The local variables will be measure using a set of 3 sensors around the dormitory.
-We used 3 sensors to collect data about humidity and temperature around the room (Fig. C.1).. The sensors were attached to the bed, desk and place near the window, which lets the client see conditions in locations where students spend more of their time, and compare the average indicator with norms.
+We used 3 sensors to collect data about humidity and temperature around the room (Fig. C.2.1).. The sensors were attached to the bed, desk and place near the window, which lets the client see conditions in locations where students spend more of their time, and compare the average indicator with norms.
 
 ![Web_Photo_Editor](https://github.com/Yuiko-tsr/unit-2/assets/142757977/7c4e5410-04ae-46ff-8ebc-7f4d74ff2b37)
 
-*Fig. C.1.* The sensors location
+*Fig. C.2.1* The sensors location
 ### 3. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
 
 ### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standard deviation, minimum, maximum, and median.
-![Image_20231212_111059_941](https://github.com/Yuiko-tsr/unit-2/assets/142757977/dd8d5217-e39a-4d7f-a81b-94b20806243b)
-![Image_20231212_111059_881](https://github.com/Yuiko-tsr/unit-2/assets/142757977/1d3d079e-2772-4275-aeb9-b74cd084d5f3)
-![Image_20231212_111059_913](https://github.com/Yuiko-tsr/unit-2/assets/142757977/e015badc-42ad-48e7-9b37-64e2a9f616c0)
 
+![Image_20231212_111059_941](https://github.com/Yuiko-tsr/unit-2/assets/142757977/dd8d5217-e39a-4d7f-a81b-94b20806243b)
+*Fig. C.4.1* Graph with data about the Humidity and Temperature levels from desk zone
+
+![Image_20231212_111059_881](https://github.com/Yuiko-tsr/unit-2/assets/142757977/1d3d079e-2772-4275-aeb9-b74cd084d5f3)
+*Fig. C.4.2* Graph with data about the Humidity and Temperature levels from window zone
+
+![Image_20231212_111059_913](https://github.com/Yuiko-tsr/unit-2/assets/142757977/e015badc-42ad-48e7-9b37-64e2a9f616c0)
+*Fig. C.4.3* Graph with data about the Humidity and Temperature levels from bed zone
 ### 5. Posted to the remote server as a backup.
 All data about humidity and temperature from 3 sensors are sent to csv file and remote server (Fig. C.2). Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
 ![Screen Shot 2023-12-11 at 21 23 53](https://github.com/Yuiko-tsr/unit-2/assets/142757977/543f23c3-80bb-4f98-ba2c-b4fcdde9fb2b)
 
-*Fig.C.2 .* 
+*Fig.C.5.1* 
 
 #### The part of code, which creates sensors 
 ```.py
