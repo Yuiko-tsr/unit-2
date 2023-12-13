@@ -107,13 +107,113 @@ This function allows us to create new sensors so we can store our data in the se
 ## Development
 
 ### 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours.
+
 ### 2.The local variables will be measure using a set of 3 sensors around the dormitory.
 We used 3 sensors to collect data about humidity and temperature around the room (Fig. C.2.1).. The sensors were attached to the bed, desk and place near the window, which lets the client see conditions in locations where students spend more of their time, and compare the average indicator with norms.
 
 ![Web_Photo_Editor](https://github.com/Yuiko-tsr/unit-2/assets/142757977/7c4e5410-04ae-46ff-8ebc-7f4d74ff2b37)
 
 *Fig. C.2.1* The sensors location
-### 3. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
+### 3. The solution provides a mathematical modeling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
+All data from 3 sensors inside the room and outside is used to create variable graphs. They provide levels of Humidity and Temperature in 6 different zones. 
+
+```.py
+db = pd.read_csv('reading_sb.csv')
+bed_humid = db.iloc[:, 1].tolist()
+bed_temp = db.iloc[:, 2].tolist()
+
+box5 = fig.add_subplot(grid[0,2])
+plt.plot(window_humid)
+plt.title("Window Sensor Humidity")
+box6 = fig.add_subplot(grid[1,2])
+plt.plot(window_temp)
+plt.title("Window Sensor Temperature")
+box7 = fig.add_subplot(grid[0,3])
+
+plt.plot(table_humid)
+plt.title("Table Sensor Humidity")
+box8 = fig.add_subplot(grid[1,3])
+plt.plot(table_temp)
+plt.title("Table Sensor Temperature")
+box9 = fig.add_subplot(grid[0,4])
+plt.plot(bed_humid)
+
+plt.title("Bed Sensor Humidity")
+box10 = fig.add_subplot(grid[1,4])
+plt.plot(bed_temp)
+plt.title("Bed Sensor Temperature")
+
+```
+*Code C.3.1*
+This part of the code provides modeling for the Hum/Tem level using outside sensors, so it gets information from the local network (code.C.3.2). Then we used “smoothing” to 
+
+```.py
+def get_sensor(id: int, ip: str = "192.168.6.153"):
+     request = requests.get(f"http://{ip}/readings")
+     data = request.json()
+     sensors = data["readings"][0]
+     sensor = []
+     for s in sensors:
+         if s["sensor_id"] == id:
+             sensor.append(s["value"])
+
+     return sensor
+```
+
+*Code.C.3.2*
+
+```.py
+def smoothing(x: list, size_window: int = 5):
+    smooth_x = []
+    t = []
+    for i in range(200, 400, size_window // 2):
+        points = sum(x[i:i + size_window]) / size_window
+        smooth_x.append(points)
+        t.append(i)
+    return t, smooth_x
+
+sensor1 = get_sensor(1)
+print(sensor1)
+sensor2 = get_sensor(2)
+print(sensor2)
+sensor3 = get_sensor(3)
+print(sensor3)
+sensor4= get_sensor(4)
+print(sensor4)
+sensor5 = get_sensor(5)
+print(sensor5)
+sensor0 = get_sensor(0)
+print(sensor0)
+```
+
+*Code C.3.3*
+
+
+```.py
+fig = plt.figure(figsize=(100, 10))
+grid = GridSpec(2,7,figure=fig)
+x, y = smoothing(x=sensor0)
+x2, y2 = smoothing(x=sensor2)
+x4, y4 = smoothing(x=sensor4)
+box1 = fig.add_subplot(grid[0,0])
+plt.plot(x, y, label="sensor 0")
+plt.plot(x2, y2, label="sensor 2")
+plt.plot(x4, y4, label="sensor 4")
+plt.title("Outdoor \n humidity")
+plt.legend()
+x1, y1 = smoothing(x=sensor1)
+x3, y3 = smoothing(x=sensor3)
+x5, y5 = smoothing(x=sensor5)
+box2 = fig.add_subplot(grid[1,0])
+plt.subplots_adjust(hspace=0.5)
+plt.subplots_adjust(wspace=0.5)
+plt.plot(x1, y1, label="sensor 1")
+plt.plot(x3, y3, label="sensor 3")
+plt.plot(x5, y5, label="sensor 5")
+plt.title(f"Outdoor \n temperature")
+plt.legend()
+```
+*Code C.3.2*
 
 ### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standard deviation, minimum, maximum, and median.
 
