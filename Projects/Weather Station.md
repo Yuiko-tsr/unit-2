@@ -87,13 +87,14 @@ This function allows us to create new sensors so we can store our data in the se
 |15|Writing code|Ended the code to display the received data in the form of graphs|40 min|Dec 10|C|
 |16|Making poster|Replased the main objects in the poster|30 min|Dec 10|C|
 |17|Making system diagram|Made the system diagram of the code|1 hour|Dec 10|B|
-|18|Analyzing the data|Analyzed the received information and compared it with the norms|40 min|Dec 11|C|
-|19|Making poster|Continued to make the poster|1 hour|Dec 11|C|
-|20|TOK questions|Wrote 2 answers to TOK questions|40 min|Dec 11|A|
-|21|Text for the video|Wrote the text for final video|30 min|Dec 11|D|
-|22|Success Criteria|Wrote about 1-3 success criteria and attached parts of the code and schemes|40 min|Dec 11|A, C|
-|23|Making poster|Wrote conclusion and recommendation and put in on the poster|20 min|Dec 12|A, C|
-|24|Success Criteria| 
+|18|Studing of norms|Studied norms of humidity and temperature level of favorable conditions using variable researches and articles from different countries|1.5 hours|Dec 10|D|
+|19|Analyzing the data|Analyzed the received information and compared it with the norms|40 min|Dec 11|C|
+|20|Making poster|Continued to make the poster|1 hour|Dec 11|C|
+|21|TOK questions|Wrote 2 answers to TOK questions|40 min|Dec 11|A|
+|22|Text for the video|Wrote the text for final video|30 min|Dec 11|D|
+|23|Success Criteria|Wrote about 1-3 success criteria and attached parts of the code and schemes|40 min|Dec 11|A, C|
+|24|Making poster|Wrote conclusion and recommendation and put in on the poster|20 min|Dec 12|A, C|
+|25|Code writing| Wrote the code to predict 
 ## Test Plan
 
 # Criteria C: Development
@@ -174,6 +175,8 @@ Using technology in research enables people efficient data collection and analys
 Handling everyone’s personal data should be conducted with full assurance of anonymity. We as technologists must provide guarantee of this. Results of research about any living room have a big importance, because changes will also be made in case of non-compliance. Accordingly, all information must be 100% authentic and the analysis carried out as diligently as possible
 
 ### 3). What cultural and contextual factors might impact our interpretation of the results, especially when comparing our local readings with those from the campus?
+Since the average temperature and humidity indicators differ greatly from each other in various countries and climates, the comfortable conditions for the researcher may stand apart from the average norms for the research area. In connection with this all conclusions and recommendations must be as unbiased as possible. Technologists should use varied articles and research to study average indicators of comfortable conditions, but not their own experience.
+
 
 
 
