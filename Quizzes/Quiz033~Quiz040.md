@@ -1,6 +1,7 @@
 # Quiz033
 ## Question
 
+**Fig 1** Image of the Question 033
 ## Answer
 ```.py
 import matplotlib.pyplot as plt
@@ -36,4 +37,123 @@ plt.show()
 ## Proof of Code
 <img width="643" alt="Screen Shot 2023-12-04 at 8 29 15" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/c1a5f210-2407-4b98-8ab6-551ee36925f3">
 
-**Fig. 1** Image of code running
+**Fig. 2** Image of code running
+
+# Quiz034
+## Question
+
+**Fig 3** Image of the Question 034
+## Answer
+```.py
+import xmlrpc.server
+
+import matplotlib.pyplot as plt
+plt.style.use("dark_background")
+
+# x1=-2
+# for i in range (-2,2,1):
+#     x1+=0.2
+#     y1=x1**2
+# plt.plot(x1, y1, color = "red")
+# plt.title("Four Parabolas Aligned with axes")
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+temp=0
+x1=[]
+y1=[]
+for _ in range (150):
+    x1.append(temp)
+    y1.append((temp-2)**2)
+    temp+=0.04
+plt.plot(x1, y1, color = "blue")
+plt.title("Four Funny Parabolas")
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.xlim([-15,15])
+
+temp =-6
+x2=[]
+y2=[]
+for _ in range (150):
+    x2.append(temp)
+    y2.append((temp + 2) ** 2)
+    temp+=0.04
+plt.plot(x2,y2, color = "red")
+plt.title("Four Funny Parabolas")
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+
+
+temp=-6
+x3=[]
+y3=[]
+for _ in range (150):
+    x3.append(temp)
+    y3.append(-(temp + 2) ** 2)
+    temp+=0.04
+plt.plot(x3, y3, color = "purple")
+plt.title("Four Funny Parabolas")
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+
+temp=0
+x4=[]
+y4=[]
+for _ in range (150):
+    x4.append(temp)
+    y4.append(-(temp - 2) ** 2)
+    temp+=0.04
+plt.plot(x4, y4, color = "white")
+plt.title("Four Funny Parabolas")
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+
+#
+# x3=0
+# for i in range (0,4,1):
+#     x3+=0.2
+#     y3=x3//2
+# plt.plot(x3, y3, color = "purple")
+# plt.title("Four Parabolas Aligned with axes")
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+#
+# x4=0
+# for i in range (-4,0,1):
+#     x4+=0.2
+#     y4 = -x4 // 2
+# plt.plot(x4, y4, color = "black")
+# plt.title("Four Parabolas Aligned with axes")
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+
+
+
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+
+plt.show()
+
+```
+
+## Proof of Code
+
+**Fig. 4** Image of code running
+
+
+# Quiz035
+## Question
+
+**Fig 5** Image of the Question 035
+## Answer
+```.py
+
+```
+
+## Proof of Code
+<img width="643" alt="Screen Shot 2023-12-04 at 8 29 15" src="https://github.com/Yuiko-tsr/unit-2/assets/134657923/c1a5f210-2407-4b98-8ab6-551ee36925f3">
+
+**Fig. 6** Image of code running
+
+
+
