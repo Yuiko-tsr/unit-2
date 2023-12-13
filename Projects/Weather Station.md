@@ -266,6 +266,10 @@ def add_data(value, token, id, ip="192.168.6.153"):
 
 
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
+After getting all data about temperature level in the room
+and graphs, we are able to make predictions for the next 12 hours using code.C.6.1 
+Also it proved almost impossible to predict accurate humidity levels because of permanent changes, as you can see in the fig.C.6.3
+
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 To summarize all the information we got and present our research to the clients we made a banner. It contains all the information about our methods and materials, 14 graphs of indoor and outdoor sensors, our conclusion and some recommendation about remedial measures to improve living conditions 
 ![Screen Shot 2023-12-14 at 8 04 57](https://github.com/Yuiko-tsr/unit-2/assets/142757977/0aa081f9-8406-4f60-8c00-baca627534f0)
