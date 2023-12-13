@@ -94,7 +94,9 @@ This function allows us to create new sensors so we can store our data in the se
 |22|Text for the video|Wrote the text for final video|30 min|Dec 11|D|
 |23|Success Criteria|Wrote about 1-3 success criteria and attached parts of the code and schemes|40 min|Dec 11|A, C|
 |24|Making poster|Wrote conclusion and recommendation and put in on the poster|20 min|Dec 12|A, C|
-|25|Code writing| Wrote the code to predict 
+|25|Code writing| Wrote the code to predict Humidity and Temperature level in 12 hours|2 hours|Dec 13|C|
+|26|Making video|Made speaking of the text, screen video and added some video from process of getting data, writing subtitles, edited the video with project presentation|5 hours|Dec 13|D|
+
 ## Test Plan
 
 # Criteria C: Development
