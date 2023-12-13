@@ -116,6 +116,7 @@ We used 3 sensors to collect data about humidity and temperature around the room
 *Fig. C.2.1* The sensors location
 ### 3. The solution provides a mathematical modeling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
 All data from 3 sensors inside the room and outside is used to create variable graphs. They provide levels of Humidity and Temperature in 6 different zones. 
+The first part of the code provides modeling for the Hum/Tem level using outside sensors, so it gets information from the local network (code.C.3.2). Then we used “smoothing” to 
 
 ```.py
 db = pd.read_csv('reading_sb.csv')
@@ -144,8 +145,8 @@ plt.plot(bed_temp)
 plt.title("Bed Sensor Temperature")
 
 ```
+
 *Code C.3.1*
-This part of the code provides modeling for the Hum/Tem level using outside sensors, so it gets information from the local network (code.C.3.2). Then we used “smoothing” to 
 
 ```.py
 def get_sensor(id: int, ip: str = "192.168.6.153"):
@@ -266,6 +267,9 @@ def add_data(value, token, id, ip="192.168.6.153"):
 
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+To summarize all the information we got and present our research to the clients we made a banner. It contains all the information about our methods and materials, 14 graphs of indoor and outdoor sensors, our conclusion and some recommendation about remedial measures to improve living conditions 
+![Screen Shot 2023-12-14 at 8 04 57](https://github.com/Yuiko-tsr/unit-2/assets/142757977/0aa081f9-8406-4f60-8c00-baca627534f0)
+https://www.canva.com/design/DAF2dSGzz78/WDoAuLG9kkOW7O9i_ROZDA/edit?utm_content=DAF2dSGzz78&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
 ## TOK questions
