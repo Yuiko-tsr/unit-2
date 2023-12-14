@@ -271,6 +271,92 @@ After getting all data about temperature level in the room
 and graphs, we are able to make predictions for the next 12 hours using code.C.6.1 
 Also it proved almost impossible to predict accurate humidity levels because of permanent changes, as you can see in the fig.C.6.3
 
+
+![Image_20231214_103524_779](https://github.com/Yuiko-tsr/unit-2/assets/142757977/69abc542-2a69-4f8d-82fa-6d40849eec21)
+
+
+*Fig.C.6.1* temperature prediction 
+
+![Image_20231214_103524_701](https://github.com/Yuiko-tsr/unit-2/assets/142757977/b0a41516-7192-49c6-bc54-19aee015ccd9)
+
+
+*Fig.C.6.2* humidity prediction 
+```.py
+poly_features_temp = PolynomialFeatures(degree=2)
+x_poly_temp = poly_features_temp.fit_transform(x_values_temp.reshape(-1, 1))
+reg_temp = LinearRegression().fit(x_poly_temp, y_values_temp)
+pred_temp = reg_temp.predict(x_poly_temp)
+
+
+box13 = fig.add_subplot(grid[0, 6])
+plt.plot(mean_inside_temp, label="Actual Temperature")
+
+
+temp=0
+x1=[]
+y1=[]
+for _ in range (100):
+    x1.append(temp)
+    y1.append(0.026*temp+21)
+    temp+=2.5
+temp=250
+x2=[]
+y2=[]
+for _ in range (100):
+    x2.append(temp)
+    y2.append(-0.0111*(temp-250)+27.5)
+    temp+=2.7
+temp=550
+x3=[]
+y3=[]
+for _ in range(100):
+    x3.append(temp)
+    y3.append(0.0625*(temp-550)+24.5)
+    temp+=0.24
+
+temp = 574
+x4=[]
+y4=[]
+for _ in range(100):
+    x4.append(temp)
+    y4.append(-0.1*(temp-574)+26)
+    temp+=0.1
+temp=584
+x5=[]
+y5=[]
+for _ in range(100):
+    x5.append(temp)
+    y5.append(0.0417*(temp-584)+25)
+    temp+=0.6
+
+plt.plot(x1, y1, label="Line of Best Fit", color="blue")
+plt.plot(x2, y2, color="blue")
+plt.plot(x3, y3, color="blue")
+plt.plot(x4, y4, color="blue")
+plt.plot(x5, y5, color="red",label="Prediction")
+plt.title("Temperature\n Line of Best Fit \nand Prediction")
+plt.xlim([0,650])
+box13.legend()
+
+x_values_humid = np.array(x_values)[np.array(x_values)>500]
+y_values_humid = np.array(mean_inside_humid)[np.array(x_values)>500]
+coefficients_humid = np.polyfit(x_values_humid,y_values_humid,1)
+
+line_of_best_fit_humid =np.polyval(coefficients_humid,x_values_humid)
+
+
+box14 = fig.add_subplot(grid[1, 6])
+plt.plot(mean_inside_humid, label="Actual Humidity")
+plt.plot(x_values_humid, line_of_best_fit_humid,label="Line of Best Fit")
+plt.title("Humidity\n Line of Best Fit \nand Prediction")
+plt.xlim([500,650])
+box14.legend()
+
+plt.show()
+```
+*Code.C.6.3* 
+
+
 ### 7. The solution includes a poster summarizing the visual representations, model and analysis created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
 To summarize all the information we got and present our research to the clients we made a banner. It contains all the information about our methods and materials, 14 graphs of indoor and outdoor sensors, our conclusion and some recommendation about remedial measures to improve living conditions 
 ![Screen Shot 2023-12-14 at 8 04 57](https://github.com/Yuiko-tsr/unit-2/assets/142757977/0aa081f9-8406-4f60-8c00-baca627534f0)
