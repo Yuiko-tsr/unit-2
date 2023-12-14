@@ -97,7 +97,7 @@ This function allows us to create new sensors so we can store our data in the se
 |25|Code writing| Wrote the code to predict Humidity and Temperature level in 12 hours|2 hours|Dec 13|C|
 |26|Making video|Made speaking of the text, screen video and added some video from process of getting data, writing subtitles, edited the video with project presentation|5 hours|Dec 13|D|
 |27|Finishing work with the banner|Added all the details and graphics to the banner, uploaded it to the project|30 min|Dec 13|C|
-|28|Checking| Checked all points of the project and added all the unfinished ones|1.5 hours|Dec 14|A, B, C, D|
+|28|Checking| Checked all points of the project and added all the unfinished ones|2 hours|Dec 14|A, B, C, D|
 
 ## Test Plan
 
@@ -108,6 +108,12 @@ This function allows us to create new sensors so we can store our data in the se
 ## Development
 
 ### 1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours.
+
+To create graphs we used information from 6 sensors, 3 of them were replaced inside the room near bed, window and desk, and other 3 sensors were outside. Data  was collected for 48 hours without stopping. Notifications were made every 5 minutes from every sensor, so as a result we got as a minimum 576 recordings about humidity and temperature from every sensor. 
+
+
+![Image_20231214_152214_064](https://github.com/Yuiko-tsr/unit-2/assets/142757977/b2ce4293-3b41-4901-a918-ae2e97b97393)
+
 
 ### 2.The local variables will be measure using a set of 3 sensors around the dormitory.
 We used 3 sensors to collect data about humidity and temperature around the room (Fig. C.2.1).. The sensors were attached to the bed, desk and place near the window, which lets the client see conditions in locations where students spend more of their time, and compare the average indicator with norms.
