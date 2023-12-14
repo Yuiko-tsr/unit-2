@@ -115,8 +115,8 @@ We used 3 sensors to collect data about humidity and temperature around the room
 
 *Fig. C.2.1* The sensors location
 ### 3. The solution provides a mathematical modeling for the Humidity and Temperature levels for each Local and Remote locations. (Non-lineal model)
-All data from 3 sensors inside the room and outside is used to create variable graphs. They provide levels of Humidity and Temperature in 6 different zones. 
-The first part of the code provides modeling for the Hum/Tem level using outside sensors, so it gets information from the local network (code.C.3.2). Then we used “smoothing” to 
+All data from 3 sensors inside the room and outside is used to create variable graphs. They provide levels of Humidity and Temperature in 6 different zones. We used csv file as a source of data for graphs of indoor sensors (code.C.3.1)
+The next part of the code provides modeling for the Hum/Tem level using outside sensors, so it gets information from the local network (code.C.3.2). Then we used “smoothing” to improved visualization (code.C.3.3). Then we created a 2x7 grid of subplots using Matplotlib and add all graphs here (code.C.3.4)
 
 ```.py
 db = pd.read_csv('reading_sb.csv')
@@ -172,19 +172,6 @@ def smoothing(x: list, size_window: int = 5):
         smooth_x.append(points)
         t.append(i)
     return t, smooth_x
-
-sensor1 = get_sensor(1)
-print(sensor1)
-sensor2 = get_sensor(2)
-print(sensor2)
-sensor3 = get_sensor(3)
-print(sensor3)
-sensor4= get_sensor(4)
-print(sensor4)
-sensor5 = get_sensor(5)
-print(sensor5)
-sensor0 = get_sensor(0)
-print(sensor0)
 ```
 
 *Code C.3.3*
@@ -214,7 +201,7 @@ plt.plot(x5, y5, label="sensor 5")
 plt.title(f"Outdoor \n temperature")
 plt.legend()
 ```
-*Code C.3.2*
+*Code C.3.4*
 
 ### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standard deviation, minimum, maximum, and median.
 
