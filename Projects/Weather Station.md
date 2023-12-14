@@ -97,6 +97,7 @@ This function allows us to create new sensors so we can store our data in the se
 |25|Code writing| Wrote the code to predict Humidity and Temperature level in 12 hours|2 hours|Dec 13|C|
 |26|Making video|Made speaking of the text, screen video and added some video from process of getting data, writing subtitles, edited the video with project presentation|5 hours|Dec 13|D|
 |27|Finishing work with the banner|Added all the details and graphics to the banner, uploaded it to the project|30 min|Dec 13|C|
+|28|Checking| Checked all points of the project and added all the unfinished ones|1.5 hours|Dec 14|A, B, C, D|
 
 ## Test Plan
 
@@ -268,8 +269,8 @@ def add_data(value, token, id, ip="192.168.6.153"):
 
 ### 6. The solution provides a prediction for the subsequent 12 hours for both temperature and humidity.
 After getting all data about temperature level in the room
-and graphs, we are able to make predictions for the next 12 hours using code.C.6.1 
-Also it proved almost impossible to predict accurate humidity levels because of permanent changes, as you can see in the fig.C.6.3
+and graphs, we are able to make predictions for the next 12 hours using code.C.6.3 
+Also it proved almost impossible to predict accurate humidity levels because of permanent changes, as you can see in the fig.C.6.2
 
 
 ![Image_20231214_103524_779](https://github.com/Yuiko-tsr/unit-2/assets/142757977/69abc542-2a69-4f8d-82fa-6d40849eec21)
