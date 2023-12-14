@@ -394,3 +394,5 @@ Since the average temperature and humidity indicators differ greatly from each o
 A 7 min video demonstrating the proposed solution with narration
 
 https://www.youtube.com/watch?feature=shared&v=Q377E43BSA4
+or
+https://drive.google.com/file/d/1Y7ioQ9vWcE9pYMLTWpKIMK_kpZzMktEX/view?usp=drivesdk
