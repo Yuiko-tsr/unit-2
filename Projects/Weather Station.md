@@ -233,6 +233,8 @@ We analyzed some sources of information and got the solution that the perfect te
 All data about humidity and temperature from 3 sensors are sent to csv file and remote server (Fig. C.5.1). Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
 
 
+![Screen Shot 2023-12-14 at 10 55 00](https://github.com/Yuiko-tsr/unit-2/assets/142757977/43a0dcde-06dd-442b-86f7-63221a60ee33)
+
 
 *Fig.C.5.1* 
 
