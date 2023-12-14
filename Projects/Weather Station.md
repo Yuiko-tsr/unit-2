@@ -218,13 +218,24 @@ plt.legend()
 
 ### 4.The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standard deviation, minimum, maximum, and median.
 
-![Image_20231212_111059_941](https://github.com/Yuiko-tsr/unit-2/assets/142757977/dd8d5217-e39a-4d7f-a81b-94b20806243b)
+We analyzed some sources of information and got the solution that the perfect temperature for the room is 23-24C. 21-25C is an acceptable norm. The best level of humidity is 40-50%. 35-55% also is considered an admissible index. As we can in in the fig.C.4.1, C.4.2 and C.4.3, the norms are observed not always. The green line is ideal level, the yellow one is permissible indices
+
+
+![Image_20231214_095946_261](https://github.com/Yuiko-tsr/unit-2/assets/142757977/c97f60fd-2efb-4664-824a-d2b24c253c6f)
+
+
 *Fig. C.4.1* Graph with data about the Humidity and Temperature levels from desk zone
 
-![Image_20231212_111059_881](https://github.com/Yuiko-tsr/unit-2/assets/142757977/1d3d079e-2772-4275-aeb9-b74cd084d5f3)
+
+![Image_20231214_095946_345](https://github.com/Yuiko-tsr/unit-2/assets/142757977/c5bbea51-977d-4bb1-9a7f-b1d348985bfe)
+
+
 *Fig. C.4.2* Graph with data about the Humidity and Temperature levels from window zone
 
-![Image_20231212_111059_913](https://github.com/Yuiko-tsr/unit-2/assets/142757977/e015badc-42ad-48e7-9b37-64e2a9f616c0)
+
+![Image_20231214_095946_261](https://github.com/Yuiko-tsr/unit-2/assets/142757977/99d3b240-be6c-409b-817e-cebc7767182c)
+
+
 *Fig. C.4.3* Graph with data about the Humidity and Temperature levels from bed zone
 
 
