@@ -221,7 +221,8 @@ We analyzed some sources of information and got the solution that the perfect te
 *Fig. C.4.2* Graph with data about the Humidity and Temperature levels from window zone
 
 
-![Image_20231214_095946_261](https://github.com/Yuiko-tsr/unit-2/assets/142757977/99d3b240-be6c-409b-817e-cebc7767182c)
+![Image_20231214_095946_305 (1)](https://github.com/Yuiko-tsr/unit-2/assets/142757977/52239818-d87a-4a13-b987-0c5f1c80bb75)
+
 
 
 *Fig. C.4.3* Graph with data about the Humidity and Temperature levels from bed zone
@@ -231,7 +232,7 @@ We analyzed some sources of information and got the solution that the perfect te
 
 All data about humidity and temperature from 3 sensors are sent to csv file and remote server (Fig. C.5.1). Information saved here is a backup option in case of csv file problems and can be used by the clients, if they are ​​authorized.
 
-![Screen Shot 2023-12-11 at 21 23 53](https://github.com/Yuiko-tsr/unit-2/assets/142757977/543f23c3-80bb-4f98-ba2c-b4fcdde9fb2b)
+
 
 *Fig.C.5.1* 
 
